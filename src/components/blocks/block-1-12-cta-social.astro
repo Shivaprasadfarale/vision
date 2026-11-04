@@ -1,0 +1,103 @@
+---
+/**
+ * Block 1-12 — social media CTA. The three post cards fan out and the title /
+ * buttons reveal on scroll (src/scripts/blocks/block-1-12-cta-social.js).
+ */
+import WpImage from "../WpImage.astro";
+import type { CtaSocialProps } from "../../data/blocks/block-1-12-cta-social";
+
+type Props = CtaSocialProps;
+const { variant, title, account, posts, buttons } = Astro.props;
+const positions = ["left", "center", "right"] as const;
+const strokeProps = { stroke: "#262626", "stroke-width": "1.2", "stroke-linecap": "round", "stroke-linejoin": "round" };
+const iconStroke = { stroke: "currentColor", "stroke-width": "1.5", "stroke-linecap": "round", "stroke-linejoin": "round" };
+---
+
+<section
+  class:list={["block-1-12-cta-social", `block-1-12-cta-social--${variant}`]}
+  data-block="block-1-12-cta-social"
+  aria-label={title}
+>
+  <div class="block-1-12-cta-social__cards anim-hidden" data-anim="cards">
+    {
+      posts.map((post, i) => (
+        <div class:list={["block-1-12-cta-social__card", `block-1-12-cta-social__card--${positions[i]}`]} data-anim="card">
+          <div class="block-1-12-cta-social__card-header">
+            <div class="block-1-12-cta-social__card-logo">
+              <svg viewBox="0 0 11.22 24.25" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path
+                  d="M5.61 21.63C2.74 21.63.4 19.29.4 16.42.4 13.55 2.74 11.22 5.61 11.22c2.87 0 5.2 2.34 5.2 5.2 0 2.87-2.34 5.21-5.2 5.21zm0-1.78c1.89 0 3.43-1.54 3.43-3.43 0-1.89-1.54-3.43-3.43-3.43-1.89 0-3.43 1.54-3.43 3.43 0 1.89 1.54 3.43 3.43 3.43z"
+                  fill="currentColor"
+                />
+                <path d="M5.61 8.67 8.67 5.61 5.61 2.55 2.55 5.61 5.61 8.67zm0 2.55L0 5.61 5.61 0l5.61 5.61-5.61 5.61z" fill="currentColor" />
+                <path d="M8.23 24.25 5.61 21.62l-2.63 2.63h5.25z" fill="currentColor" />
+              </svg>
+            </div>
+            <div class="block-1-12-cta-social__card-info">
+              <span class="block-1-12-cta-social__card-name">{account.name}</span>
+              <span class="block-1-12-cta-social__card-location">{account.location}</span>
+            </div>
+          </div>
+          <div class="block-1-12-cta-social__card-image">
+            <WpImage src={post.image} alt={post.alt} class="attachment-medium size-medium" sizes="auto, (min-width: 48em) 384px, 200px" />
+          </div>
+          <div class="block-1-12-cta-social__card-actions">
+            <div class="block-1-12-cta-social__card-actions-left">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 14s-5.5-3.5-5.5-7A3.5 3.5 0 0 1 8 4.5 3.5 3.5 0 0 1 13.5 7C13.5 10.5 8 14 8 14z" fill="#FF3040" />
+              </svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <circle cx="8" cy="8" r="6.5" stroke="#262626" stroke-width="1.2" />
+                <path d="M5.5 10.5 3 13" stroke="#262626" stroke-width="1.2" stroke-linecap="round" />
+              </svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M14 2 6 8M14 2l-4 12-4-6-4-4 12-2z" {...strokeProps} />
+              </svg>
+            </div>
+            <svg class="block-1-12-cta-social__card-bookmark" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M12 2H4a1 1 0 0 0-1 1v11l5-3 5 3V3a1 1 0 0 0-1-1z" {...strokeProps} />
+            </svg>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="block-1-12-cta-social__content">
+    <h2 class="block-1-12-cta-social__title anim-hidden" data-anim="title">{title}</h2>
+    <div class="block-1-12-cta-social__buttons anim-hidden" data-anim="buttons">
+      {
+        buttons.map((b) => (
+          <a
+            href={b.href}
+            class="btn btn--md block-1-12-cta-social__btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-anim="btn"
+            data-button-animate-chars=""
+          >
+            <span class="btn__bg" aria-hidden="true" />
+            <span class="btn__icon">
+              {
+                b.icon === "linkedin" && (
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.333 6.66797C14.6591 6.66797 15.9309 7.19475 16.8685 8.13243C17.8062 9.07012 18.333 10.3419 18.333 11.668V17.5013H14.9997V11.668C14.9997 11.2259 14.8241 10.802 14.5115 10.4895C14.199 10.1769 13.775 10.0013 13.333 10.0013C12.891 10.0013 12.4671 10.1769 12.1545 10.4895C11.8419 10.802 11.6663 11.2259 11.6663 11.668V17.5013H8.33301V11.668C8.33301 10.3419 8.85979 9.07012 9.79747 8.13243C10.7352 7.19475 12.0069 6.66797 13.333 6.66797Z"
+                      {...iconStroke}
+                    />
+                    <path d="M5.00033 7.5H1.66699V17.5H5.00033V7.5Z" {...iconStroke} />
+                    <path
+                      d="M3.33366 5.0013C4.25413 5.0013 5.00033 4.25511 5.00033 3.33464C5.00033 2.41416 4.25413 1.66797 3.33366 1.66797C2.41318 1.66797 1.66699 2.41416 1.66699 3.33464C1.66699 4.25511 2.41318 5.0013 3.33366 5.0013Z"
+                      {...iconStroke}
+                    />
+                  </svg>
+                )
+              }
+            </span>
+            <span class="btn__label">{b.label}</span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>

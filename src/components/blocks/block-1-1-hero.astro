@@ -1,0 +1,32 @@
+---
+/**
+ * Block 1-1 — above-the-fold hero. Image reveal, title and button entrance
+ * are driven by src/scripts/blocks/block-1-1-hero.js through data-anim hooks.
+ */
+import WpImage from "../WpImage.astro";
+import Button from "../ui/Button.astro";
+import type { HeroProps } from "../../data/blocks/block-1-1-hero";
+
+type Props = HeroProps;
+const { label, title, image, button } = Astro.props;
+---
+
+<section class="block-1-1-hero" data-block="block-1-1-hero" data-entrance="above-fold" aria-label={label}>
+  <div class="block-1-1-hero__image anim-hidden" data-anim="image">
+    <div class="block-1-1-hero__image-inner" data-anim-img-inner="">
+      <WpImage
+        src={image.src}
+        class="attachment-full size-full"
+        alt={image.alt}
+        sizes="(min-width: 48em) 45vw, 100vw"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </div>
+  </div>
+
+  <div class="block-1-1-hero__content">
+    <h1 class="block-1-1-hero__heading anim-hidden" data-anim="title">{title}</h1>
+    <Button href={button.href} label={button.label} class="btn--maron btn--lg block-1-1-hero__btn anim-hidden" data-anim="btn" />
+  </div>
+</section>

@@ -1,0 +1,19 @@
+---
+/** Client testimonials | Ronnsquare — /en/testimonials/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import HubHero from "~/components/blocks/block-3-1-hero.astro";
+import { hubHero as hubHeroData } from "~/data/blocks/block-3-1-hero";
+import ReviewsList from "~/components/blocks/block-11-1-reviews.astro";
+import { reviewsList as reviewsListData } from "~/data/blocks/block-11-1-reviews";
+import Cta from "~/components/blocks/block-1-10-cta.astro";
+import { cta as ctaData } from "~/data/blocks/block-1-10-cta";
+import CtaSocial from "~/components/blocks/block-1-12-cta-social.astro";
+import { ctaSocial as ctaSocialData } from "~/data/blocks/block-1-12-cta-social";
+---
+
+<BaseLayout page="testimonials">
+  <HubHero {...hubHeroData["testimonials/01"]} />
+  <ReviewsList {...reviewsListData["testimonials/02"]} />
+  <Cta {...ctaData["testimonials/03"]} />
+  <CtaSocial {...ctaSocialData["testimonials/04"]} />
+</BaseLayout>

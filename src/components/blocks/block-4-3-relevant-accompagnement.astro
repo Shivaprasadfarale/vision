@@ -1,0 +1,34 @@
+---
+/**
+ * Block 4-3 — "Explore our other areas of expertise": cards linking to the
+ * sibling expertise pages (animations: src/scripts/blocks/block-4-3-relevant-accompagnement.js).
+ */
+import Button from "../ui/Button.astro";
+import type { RelevantAccompagnementProps } from "../../data/blocks/block-4-3-relevant-accompagnement";
+
+type Props = RelevantAccompagnementProps;
+const { title, cards } = Astro.props;
+const ariaLabel = title.replace(/<[^>]*>/g, "");
+---
+
+<section class="block-4-3-relevant-accompagnement" data-block="block-4-3-relevant-accompagnement" aria-label={ariaLabel}>
+  <h2 class="block-4-3-relevant-accompagnement__title anim-hidden" data-anim="title" set:html={title} />
+  <div class="block-4-3-relevant-accompagnement__cards">
+    {
+      cards.map((card) => (
+        <article
+          class={`block-4-3-relevant-accompagnement__card block-4-3-relevant-accompagnement__card--${card.theme} anim-hidden`}
+          data-anim="card"
+        >
+          <div class="block-4-3-relevant-accompagnement__card-image">
+            <img src={`/assets/uploads/${card.image}`} alt={card.title} loading="lazy" />
+          </div>
+          <div class="block-4-3-relevant-accompagnement__card-content">
+            <h3 class="block-4-3-relevant-accompagnement__card-title">{card.title}</h3>
+            <Button href={card.href} label={card.buttonLabel} class="btn--sm block-4-3-relevant-accompagnement__btn" />
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

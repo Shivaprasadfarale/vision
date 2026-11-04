@@ -1,0 +1,37 @@
+---
+/** Attract and retain talent | Ronnsquare — /en/preoccupations/attract-and-retain-talent/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import ConcernHero from "~/components/blocks/block-2-1-hero.astro";
+import { concernHero as concernHeroData } from "~/data/blocks/block-2-1-hero";
+import ConcernAbout from "~/components/blocks/block-2-2-about.astro";
+import { concernAbout as concernAboutData } from "~/data/blocks/block-2-2-about";
+import Quote from "~/components/blocks/block-1-3-quote.astro";
+import { quote as quoteData } from "~/data/blocks/block-1-3-quote";
+import Services from "~/components/blocks/block-1-7-services.astro";
+import { services as servicesData } from "~/data/blocks/block-1-7-services";
+import ConcernTrust from "~/components/blocks/block-2-3-trust.astro";
+import { concernTrust as concernTrustData } from "~/data/blocks/block-2-3-trust";
+import FaqSection from "~/components/blocks/block-1-11-faq.astro";
+import { faqSection as faqSectionData } from "~/data/blocks/block-1-11-faq";
+import Projects from "~/components/blocks/block-1-8-projects.astro";
+import { projects as projectsData } from "~/data/blocks/block-1-8-projects";
+import CardReviews from "~/components/blocks/block-1-9-card-reviews.astro";
+import { cardReviews as cardReviewsData } from "~/data/blocks/block-1-9-card-reviews";
+import Cta from "~/components/blocks/block-1-10-cta.astro";
+import { cta as ctaData } from "~/data/blocks/block-1-10-cta";
+import CtaSocial from "~/components/blocks/block-1-12-cta-social.astro";
+import { ctaSocial as ctaSocialData } from "~/data/blocks/block-1-12-cta-social";
+---
+
+<BaseLayout page="preoccupations/attract-and-retain-talent">
+  <ConcernHero {...concernHeroData["preoccupations/attract-and-retain-talent/01"]} />
+  <ConcernAbout {...concernAboutData["preoccupations/attract-and-retain-talent/02"]} />
+  <Quote {...quoteData["preoccupations/attract-and-retain-talent/03"]} />
+  <Services {...servicesData["preoccupations/attract-and-retain-talent/04"]} />
+  <ConcernTrust {...concernTrustData["preoccupations/attract-and-retain-talent/05"]} />
+  <FaqSection {...faqSectionData["preoccupations/attract-and-retain-talent/06"]} />
+  <Projects {...projectsData["preoccupations/attract-and-retain-talent/07"]} />
+  <CardReviews {...cardReviewsData["preoccupations/attract-and-retain-talent/08"]} />
+  <Cta {...ctaData["preoccupations/attract-and-retain-talent/09"]} />
+  <CtaSocial {...ctaSocialData["preoccupations/attract-and-retain-talent/10"]} />
+</BaseLayout>

@@ -1,0 +1,16 @@
+---
+/** Contact - Let's talk about your project | Ronnsquare — /en/contact/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import ContactHero from "~/components/blocks/block-5-1-hero-contact.astro";
+import { contactHero as contactHeroData } from "~/data/blocks/block-5-1-hero-contact";
+import FullImage from "~/components/blocks/block-0-1-fullimage.astro";
+import { fullImage as fullImageData } from "~/data/blocks/block-0-1-fullimage";
+import CtaSocial from "~/components/blocks/block-1-12-cta-social.astro";
+import { ctaSocial as ctaSocialData } from "~/data/blocks/block-1-12-cta-social";
+---
+
+<BaseLayout page="contact">
+  <ContactHero {...contactHeroData["contact/01"]} />
+  <FullImage {...fullImageData["contact/02"]} />
+  <CtaSocial {...ctaSocialData["contact/03"]} />
+</BaseLayout>

@@ -1,0 +1,40 @@
+---
+/**
+ * Block 7-3 — client testimonial card over a parallax project photo
+ * (-15% → 15%); card and persona reveal on scroll
+ * (src/scripts/blocks/block-7-3-review-thesis.js).
+ */
+import type { ReviewThesisProps } from "../../data/blocks/block-7-3-review-thesis";
+
+type Props = ReviewThesisProps;
+const { image, quote, author } = Astro.props;
+---
+
+<section class="block-7-3-review-thesis" data-block="block-7-3-review-thesis" data-bg="maron">
+  <div class="block-7-3-review-thesis__bg anim-hidden" data-anim="bg" data-parallax="trigger" data-parallax-start="-15" data-parallax-end="15">
+    <div class="block-7-3-review-thesis__bg-inner" data-parallax="target">
+      <img class="block-7-3-review-thesis__bg-img" src={`/assets/uploads/${image.src}`} alt={image.alt} loading="lazy" />
+    </div>
+  </div>
+  <div class="block-7-3-review-thesis__card anim-hidden" data-anim="card">
+    <blockquote class="block-7-3-review-thesis__quote">{quote}</blockquote>
+    <div class="block-7-3-review-thesis__persona anim-hidden" data-anim="persona">
+      {
+        author.avatar && (
+          <img
+            class="block-7-3-review-thesis__avatar"
+            src={`/assets/uploads/${author.avatar}`}
+            alt={author.name}
+            width="60"
+            height="60"
+            loading="lazy"
+          />
+        )
+      }
+      <div class="block-7-3-review-thesis__author">
+        <span class="block-7-3-review-thesis__name">{author.name}</span>
+        <span class="block-7-3-review-thesis__title">{author.title}</span>
+      </div>
+    </div>
+  </div>
+</section>

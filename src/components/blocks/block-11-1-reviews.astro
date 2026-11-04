@@ -1,0 +1,90 @@
+---
+/**
+ * Block 11-1 — testimonials list with numbered pagination. Page changes are
+ * handled client-side by src/scripts/blocks/block-11-1-reviews.js, which reads
+ * data-per-page / data-total / data-paged and swaps the list + pagination HTML.
+ */
+import type { ReviewsListProps } from "../../data/blocks/block-11-1-reviews";
+
+type Props = ReviewsListProps;
+const { perPage, total, paged, reviews } = Astro.props;
+const totalPages = Math.max(1, Math.ceil(total / perPage));
+const uploads = (src: string) => `/assets/uploads/${src}`;
+
+// Same window as the server-rendered pagination: first/last page, current ±1, ellipses in between.
+const pages: (number | "…")[] = [];
+for (let n = 1; n <= totalPages; n++) {
+  if (n === 1 || n === totalPages || Math.abs(n - paged) <= 1) pages.push(n);
+  else if (pages[pages.length - 1] !== "…") pages.push("…");
+}
+---
+
+<section
+  class="block-11-1-reviews block-11-1-reviews--list"
+  data-block="block-11-1-reviews"
+  data-layout="list"
+  data-per-page={perPage}
+  data-total={total}
+  data-total-pages={totalPages}
+  data-paged={paged}
+>
+  <div class="block-11-1-reviews__list anim-hidden" data-anim="list">
+    {
+      reviews.map((r) => (
+        <div class="block-11-1-reviews__featured" data-anim="row">
+          <div class="block-11-1-reviews__featured-media" data-media-type="image">
+            <img class="block-11-1-reviews__image" src={uploads(r.image.src)} alt={r.image.alt} loading="lazy" />
+          </div>
+          <div class="block-11-1-reviews__featured-content">
+            <blockquote class="block-11-1-reviews__featured-quote">“{r.quote}”</blockquote>
+            <div class="block-11-1-reviews__featured-author">
+              <img class="block-11-1-reviews__featured-avatar" src={uploads(r.author.avatar)} alt={r.author.name} loading="lazy" />
+              <div class="block-11-1-reviews__featured-author-info">
+                <span class="block-11-1-reviews__featured-name">{r.author.name}</span>
+                <span class="block-11-1-reviews__featured-role">{r.author.role}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="block-11-1-reviews__pagination-wrap anim-hidden" data-anim="pagination">
+    <nav class="block-11-1-reviews__pagination" aria-label="Testimonials pagination">
+      {
+        paged > 1 ? (
+          <button type="button" class="block-11-1-reviews__page block-11-1-reviews__page--prev" data-page={paged - 1}>
+            <span aria-hidden="true">←</span> Previous
+          </button>
+        ) : (
+          <span class="block-11-1-reviews__page block-11-1-reviews__page--prev is-disabled" aria-hidden="true">
+            <span>←</span> Previous
+          </span>
+        )
+      }
+      {
+        pages.map((p) =>
+          p === "…" ? (
+            <span class="block-11-1-reviews__page block-11-1-reviews__ellipsis" aria-hidden="true">…</span>
+          ) : p === paged ? (
+            <span class="block-11-1-reviews__page is-current" aria-current="page">{p}</span>
+          ) : (
+            <button type="button" class="block-11-1-reviews__page" data-page={p}>{p}</button>
+          ),
+        )
+      }
+      {
+        paged < totalPages ? (
+          <button type="button" class="block-11-1-reviews__page block-11-1-reviews__page--next" data-page={paged + 1}>
+            Next <span aria-hidden="true">→</span>
+          </button>
+        ) : (
+          <span class="block-11-1-reviews__page block-11-1-reviews__page--next is-disabled" aria-hidden="true">
+            Next <span>→</span>
+          </span>
+        )
+      }
+    </nav>
+  </div>
+</section>

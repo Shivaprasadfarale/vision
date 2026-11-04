@@ -1,0 +1,14 @@
+---
+/**
+ * Block 3-1 — hub page hero: a single H1, optionally centred
+ * (animations: src/scripts/blocks/block-3-1-hero.js).
+ */
+import type { HubHeroProps } from "../../data/blocks/block-3-1-hero";
+
+type Props = HubHeroProps;
+const { title, centered = false } = Astro.props;
+---
+
+<section class:list={["block-3-1-hero", { "block-3-1-hero--centered": centered }]} data-block="block-3-1-hero" data-entrance="above-fold" aria-label={title}>
+  <h1 class="block-3-1-hero__heading anim-hidden" data-anim="title">{title}</h1>
+</section>

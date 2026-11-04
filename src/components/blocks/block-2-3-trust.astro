@@ -1,0 +1,32 @@
+---
+/**
+ * Block 2-3 — "Why trust us" grid of four icon cards
+ * (animations: src/scripts/blocks/block-2-3-trust.js).
+ */
+import type { ConcernTrustProps } from "../../data/blocks/block-2-3-trust";
+
+type Props = ConcernTrustProps;
+const { title, cards } = Astro.props;
+---
+
+<section class="block-2-3-trust" data-block="block-2-3-trust" aria-label={title}>
+  <div class="block-2-3-trust__inner">
+    <h2 class="block-2-3-trust__title anim-hidden" data-anim="title">{title}</h2>
+
+    <div class="block-2-3-trust__grid">
+      {
+        cards.map((card) => (
+          <div class="block-2-3-trust__card anim-hidden" data-anim="card">
+            <div class="block-2-3-trust__card-media">
+              <img width="1" height="1" src={`/assets/uploads/${card.icon}`} class="attachment-medium size-medium" alt="" loading="lazy" decoding="async" />
+            </div>
+            <div class="block-2-3-trust__card-body">
+              <h3 class="block-2-3-trust__card-title">{card.title}</h3>
+              <p class="block-2-3-trust__card-desc">{card.description}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

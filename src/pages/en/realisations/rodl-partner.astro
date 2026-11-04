@@ -1,0 +1,22 @@
+---
+/** Rödl & Partner - Paris 8ème | Ronnsquare — /en/realisations/rodl-partner/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import CaseStudyHero from "~/components/blocks/block-7-1-hero.astro";
+import { hero as heroData } from "~/data/blocks/block-7-1-hero";
+import Seo from "~/components/blocks/block-7-2-seo.astro";
+import { seo as seoData } from "~/data/blocks/block-7-2-seo";
+import Gallery from "~/components/blocks/block-7-4-gallery.astro";
+import { gallery as galleryData } from "~/data/blocks/block-7-4-gallery";
+import ReviewThesis from "~/components/blocks/block-7-3-review-thesis.astro";
+import { reviewThesis as reviewThesisData } from "~/data/blocks/block-7-3-review-thesis";
+import Projects from "~/components/blocks/block-1-8-projects.astro";
+import { projects as projectsData } from "~/data/blocks/block-1-8-projects";
+---
+
+<BaseLayout page="realisations/rodl-partner">
+  <CaseStudyHero {...heroData["realisations/rodl-partner/01"]} />
+  <Seo {...seoData["realisations/rodl-partner/02"]} />
+  <Gallery {...galleryData["realisations/rodl-partner/03"]} />
+  <ReviewThesis {...reviewThesisData["realisations/rodl-partner/04"]} />
+  <Projects {...projectsData["realisations/rodl-partner/05"]} />
+</BaseLayout>

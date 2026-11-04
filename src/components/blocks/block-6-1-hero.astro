@@ -1,0 +1,48 @@
+---
+/**
+ * Block 6-1 — listing hero (no-filters variant). Heading split-reveal,
+ * description fade-up, and the swaying "équilibre" totem (diamond + circle on
+ * a triangle) entering from the right (src/scripts/blocks/block-6-1-hero.js).
+ */
+import type { HeroProps } from "../../data/blocks/block-6-1-hero";
+
+type Props = HeroProps;
+const { heading, description, ariaLabel, entrance = "above-fold" } = Astro.props;
+---
+
+<section
+  class="block-6-1-hero block-6-1-hero--no-filters"
+  data-block="block-6-1-hero"
+  data-entrance={entrance === "above-fold" ? "above-fold" : undefined}
+  aria-label={ariaLabel}
+>
+  <div class="block-6-1-hero__text">
+    <h1 class="block-6-1-hero__heading anim-hidden" data-anim="title" set:html={heading} />
+    <p class="block-6-1-hero__description anim-hidden" data-anim="description">{description}</p>
+  </div>
+  <div class="block-6-1-hero__totem block-6-1-hero__totem--desktop anim-hidden" data-anim="totem" aria-hidden="true">
+    <svg class="equilibre-totem" viewBox="0 0 284 611" overflow="visible" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g class="equilibre-totem__sway" data-shape="sway">
+        <g class="equilibre-totem__diamond" data-shape="diamond">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M141.1.9L.9,143.2l142,140.4,140.1-142.2L141.1.9ZM142.5,219.2l-77.4-76.5,76.3-77.5,77.4,76.5-76.3,77.5Z"
+            fill="currentColor"></path>
+        </g>
+
+        <g class="equilibre-totem__circle" data-shape="circle">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M142.9,283.3c-72.2.5-130.5,59.7-130,131.9.5,72.3,59.6,130.7,131.7,130.2,72.2-.5,130.5-59.7,130-131.9-.5-72.3-59.6-130.7-131.7-130.2ZM144.3,500.7c-47.5.3-86.5-38.2-86.8-85.8-.3-47.6,38.1-86.6,85.6-86.9,47.5-.3,86.5,38.2,86.8,85.8.3,47.6-38.1,86.6-85.6,86.9Z"
+            fill="currentColor"></path>
+        </g>
+      </g>
+
+      <g class="equilibre-totem__triangle" data-shape="triangle">
+        <path d="M207.91 611L141.875 544.856L75.8398 611H207.91Z" fill="currentColor"></path>
+      </g>
+    </svg>
+  </div>
+</section>

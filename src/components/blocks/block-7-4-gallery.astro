@@ -1,0 +1,43 @@
+---
+/**
+ * Block 7-4 — case-study gallery. Reuses the block-1-8 projects grid markup; each
+ * card is a lightbox trigger (data-lightbox-full). Cards reveal on scroll
+ * (src/scripts/blocks/block-7-4-gallery.js).
+ */
+import WpImage from "../WpImage.astro";
+import media from "../../data/media.json";
+import type { GalleryProps } from "../../data/blocks/block-7-4-gallery";
+
+type Props = GalleryProps;
+const { photos, noPb = false } = Astro.props;
+const widthOf = (src: string) => (media as Record<string, { w?: number }>)[src]?.w;
+---
+
+<section class:list={["block-1-8-projects block-7-4-gallery block-7-4-gallery--grid-2", { "block-7-4-gallery--no-pb": noPb }]} data-block="block-7-4-gallery">
+  <div class="block-1-8-projects__inner">
+    <div class="block-1-8-projects__grid">
+      {
+        photos.map((p, i) => (
+          <figure
+            class="block-1-8-projects__card anim-hidden"
+            data-anim="card"
+            role="button"
+            tabindex="0"
+            data-lightbox-full={`/assets/uploads/${p.src}`}
+            data-lightbox-alt={p.alt}
+            aria-label={`Enlarge image ${i + 1}`}
+          >
+            <div class="block-1-8-projects__card-media">
+              <WpImage
+                src={p.src}
+                class="attachment-2048x2048 size-2048x2048"
+                alt={p.alt}
+                sizes={`auto, (max-width: ${widthOf(p.src)}px) 100vw, ${widthOf(p.src)}px`}
+              />
+            </div>
+          </figure>
+        ))
+      }
+    </div>
+  </div>
+</section>

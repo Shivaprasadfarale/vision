@@ -1,0 +1,32 @@
+---
+/**
+ * Block 5-2 — company values as a row of geometric figures (square, diamond, circle)
+ * (animations: src/scripts/blocks/block-5-2-advantages.js).
+ */
+import type { DnaValuesProps } from "../../data/blocks/block-5-2-advantages";
+
+type Props = DnaValuesProps;
+const { ariaLabel, figures } = Astro.props;
+---
+
+<section class="block-5-2-advantages" data-block="block-5-2-advantages" aria-label={ariaLabel}>
+  <div class="block-5-2-advantages__row">
+    {
+      figures.map((fig) => (
+        <article class={`block-5-2-advantages__figure block-5-2-advantages__figure--${fig.shape} anim-hidden`} data-anim="figure">
+          {fig.shape === "diamond" && (
+            <div class="block-5-2-advantages__shape-bg" aria-hidden="true">
+              <svg viewBox="0 0 398 398" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M199 0L398 199L199 398L0 199L199 0Z" fill="currentColor" />
+              </svg>
+            </div>
+          )}
+          <div class="block-5-2-advantages__content">
+            <h3 class="block-5-2-advantages__title">{fig.title}</h3>
+            <p class="block-5-2-advantages__desc" set:html={fig.description} />
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

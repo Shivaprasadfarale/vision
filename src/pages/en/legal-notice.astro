@@ -1,0 +1,10 @@
+---
+/** Legal Notice - Ronnsquare — /en/legal-notice/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import LegalPage from "~/components/blocks/legal-page.astro";
+import { legalPage as legalPageData } from "~/data/blocks/legal-page";
+---
+
+<BaseLayout page="legal-notice">
+  <LegalPage {...legalPageData["legal-notice/01"]} />
+</BaseLayout>

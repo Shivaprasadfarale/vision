@@ -1,0 +1,43 @@
+---
+/**
+ * Block 4-1 — expertise detail hero: themed text column (title, description,
+ * scroll-next button) and a large photo (animations: src/scripts/blocks/block-4-1-hero.js).
+ * The original <img> carries an explicit loading="eager", which WpImage omits,
+ * so the srcset is resolved from the media registry here.
+ */
+import media from "../../data/media.json";
+import Button from "../ui/Button.astro";
+import type { ExpertiseHeroProps } from "../../data/blocks/block-4-1-hero";
+
+type Props = ExpertiseHeroProps;
+const { theme, titleSize, ariaLabel, title, description, buttonLabel, image } = Astro.props;
+const base = "/assets/uploads/";
+const entry = (media as Record<string, { w?: number; h?: number; srcset: [string, string][] }>)[image.src];
+const srcset = entry?.srcset?.map(([u, w]) => `${base}${u} ${w}`).join(", ");
+---
+
+<section class="block-4-1-hero" data-block="block-4-1-hero" data-theme={theme} data-title-size={titleSize} data-entrance="above-fold" aria-label={ariaLabel}>
+  <div class="block-4-1-hero__content">
+    <h1 class="block-4-1-hero__heading anim-hidden" data-anim="title" set:html={title} />
+    <p class="block-4-1-hero__description anim-hidden" data-anim="description">{description}</p>
+    <div class="block-4-1-hero__btn-wrap anim-hidden" data-anim="btn">
+      <Button href="#" label={buttonLabel} class="btn--lg" data-scroll-next="" />
+    </div>
+  </div>
+  <div class="block-4-1-hero__media anim-hidden" data-anim="image">
+    <div class="block-4-1-hero__media-inner" data-anim-img-inner="">
+      <img
+        width={entry?.w}
+        height={entry?.h}
+        src={base + image.src}
+        class="block-4-1-hero__image"
+        alt={image.alt}
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+        srcset={srcset}
+        sizes={srcset ? `(max-width: ${entry?.w}px) 100vw, ${entry?.w}px` : undefined}
+      />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+---
+/** Socoda - Paris 1er | Ronnsquare — /en/realisations/socoda/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import CaseStudyHero from "~/components/blocks/block-7-1-hero.astro";
+import { hero as heroData } from "~/data/blocks/block-7-1-hero";
+import Seo from "~/components/blocks/block-7-2-seo.astro";
+import { seo as seoData } from "~/data/blocks/block-7-2-seo";
+import Gallery from "~/components/blocks/block-7-4-gallery.astro";
+import { gallery as galleryData } from "~/data/blocks/block-7-4-gallery";
+import Projects from "~/components/blocks/block-1-8-projects.astro";
+import { projects as projectsData } from "~/data/blocks/block-1-8-projects";
+---
+
+<BaseLayout page="realisations/socoda">
+  <CaseStudyHero {...heroData["realisations/socoda/01"]} />
+  <Seo {...seoData["realisations/socoda/02"]} />
+  <Gallery {...galleryData["realisations/socoda/03"]} />
+  <Projects {...projectsData["realisations/socoda/04"]} />
+</BaseLayout>

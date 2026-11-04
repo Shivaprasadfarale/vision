@@ -1,0 +1,19 @@
+---
+/** CCFA - Paris 8ème | Ronnsquare — /en/realisations/ccfa/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import CaseStudyHero from "~/components/blocks/block-7-1-hero.astro";
+import { hero as heroData } from "~/data/blocks/block-7-1-hero";
+import Seo from "~/components/blocks/block-7-2-seo.astro";
+import { seo as seoData } from "~/data/blocks/block-7-2-seo";
+import Gallery from "~/components/blocks/block-7-4-gallery.astro";
+import { gallery as galleryData } from "~/data/blocks/block-7-4-gallery";
+import Projects from "~/components/blocks/block-1-8-projects.astro";
+import { projects as projectsData } from "~/data/blocks/block-1-8-projects";
+---
+
+<BaseLayout page="realisations/ccfa">
+  <CaseStudyHero {...heroData["realisations/ccfa/01"]} />
+  <Seo {...seoData["realisations/ccfa/02"]} />
+  <Gallery {...galleryData["realisations/ccfa/03"]} />
+  <Projects {...projectsData["realisations/ccfa/04"]} />
+</BaseLayout>

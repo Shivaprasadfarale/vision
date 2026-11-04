@@ -1,0 +1,50 @@
+---
+/**
+ * Block 5-3 — ESG policy: parallax background + framed image, and three cards
+ * with scroll-driven Lottie icons (animations: src/scripts/blocks/block-5-3-advantages.js).
+ */
+import type { DnaEsgProps } from "../../data/blocks/block-5-3-advantages";
+
+type Props = DnaEsgProps;
+const { title, description, image, cards } = Astro.props;
+const ariaLabel = title.replace(/<[^>]*>/g, "");
+const imgSrc = `/assets/uploads/${image}`;
+---
+
+<section class="block-5-3-advantages" data-block="block-5-3-advantages" aria-label={ariaLabel}>
+  <div class="block-5-3-advantages__bg" data-parallax="trigger" data-parallax-start="-15" data-parallax-end="15" data-parallax-disable="tablet">
+    <div class="block-5-3-advantages__bg-inner" data-parallax="target">
+      <img src={imgSrc} alt="" loading="lazy" />
+    </div>
+    <div class="block-5-3-advantages__overlay"></div>
+  </div>
+  <div class="block-5-3-advantages__head">
+    <h2 class="block-5-3-advantages__title anim-hidden" data-anim="title" set:html={title} />
+    <p class="block-5-3-advantages__desc anim-hidden" data-anim="desc">{description}</p>
+  </div>
+  <div class="block-5-3-advantages__image anim-hidden" data-anim="image" data-parallax="trigger" data-parallax-start="-10" data-parallax-end="10">
+    <div class="block-5-3-advantages__image-inner" data-anim-img-inner="" style="aspect-ratio: 1920 / 1080">
+      <div class="block-5-3-advantages__image-parallax" data-parallax="target">
+        <img src={imgSrc} alt="" loading="lazy" />
+      </div>
+    </div>
+  </div>
+  <div class="block-5-3-advantages__cards">
+    {
+      cards.map((card) => (
+        <article class="block-5-3-advantages__card anim-hidden" data-anim="card">
+          <div class="block-5-3-advantages__card-text">
+            <h3 class="block-5-3-advantages__card-title" set:html={card.title} />
+            <p class="block-5-3-advantages__card-desc">{card.description}</p>
+          </div>
+          <div
+            class="block-5-3-advantages__card-icon block-5-3-advantages__card-icon--lottie"
+            data-lottie="trigger"
+            data-lottie-src={card.lottie}
+            data-lottie-play="scroll"
+          />
+        </article>
+      ))
+    }
+  </div>
+</section>

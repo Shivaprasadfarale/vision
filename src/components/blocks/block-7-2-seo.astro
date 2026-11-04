@@ -1,0 +1,67 @@
+---
+/**
+ * Block 7-2 — SEO text/photo split. The photo is a lightbox trigger; an optional
+ * decorative "totem" (spinning/moving shapes) sits behind. Animated by
+ * src/scripts/blocks/block-7-2-seo.js.
+ */
+import type { SeoProps } from "../../data/blocks/block-7-2-seo";
+
+type Props = SeoProps;
+const { image, title, body, totem = false, inversed = false, noPt = false, noPb = false } = Astro.props;
+const src = `/assets/uploads/${image.src}`;
+---
+
+<section
+  class:list={[
+    "block-7-2-seo",
+    { "block-7-2-seo--inversed": inversed, "block-7-2-seo--no-pt": noPt, "block-7-2-seo--no-pb": noPb },
+  ]}
+  data-block="block-7-2-seo"
+  data-bg="sable"
+>
+  <div class="block-7-2-seo__container">
+    <div class="block-7-2-seo__media anim-hidden" data-anim="media">
+      <div class="block-7-2-seo__media-inner" data-anim-img-inner="">
+        <img
+          src={src}
+          alt={image.alt}
+          class="block-7-2-seo__img"
+          role="button"
+          tabindex="0"
+          data-lightbox-full={src}
+          data-lightbox-alt={image.alt}
+          aria-label="Agrandir l'image"
+        />
+      </div>
+    </div>
+    <div class="block-7-2-seo__content">
+      <h2 class="block-7-2-seo__title anim-hidden" data-anim="title">{title}</h2>
+      <div class="block-7-2-seo__body anim-hidden" data-anim="body" set:html={body} />
+    </div>
+  </div>
+  {
+    totem && (
+      <div class="block-7-2-seo__totem anim-hidden" data-anim="totem" aria-hidden="true">
+        <svg class="seo-totem" viewBox="-157 -199 228 270" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g data-seo-part="move">
+            <g data-seo-part="spin">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                fill="currentColor"
+                d="M37.49 59.95C4.43 80.62 -39.28 70.55 -59.95 37.49C-80.62 4.43 -70.55 -39.28 -37.49 -59.95C-4.43 -80.62 39.28 -70.55 59.95 -37.49C80.62 -4.43 70.55 39.28 37.49 59.95ZM24.7 39.49C46.47 25.88 53.11 -2.92 39.49 -24.7C25.88 -46.47 -2.92 -53.11 -24.7 -39.49C-46.47 -25.87 -53.11 2.92 -39.49 24.7C-25.87 46.47 2.92 53.11 24.7 39.49Z"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                fill="currentColor"
+                transform="translate(-74.29 -126.48)"
+                d="M40.42 64.63L-64.63 40.42L-40.42 -64.63L64.63 -40.42L40.42 64.63ZM22.02 35.21L35.21 -22.02L-22.02 -35.21L-35.21 22.02L22.02 35.21Z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+    )
+  }
+</section>

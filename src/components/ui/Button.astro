@@ -1,0 +1,18 @@
+---
+/**
+ * Theme button (`.btn`): background layer + label. Labels are split into
+ * per-character spans at runtime for the hover roll (data-button-animate-chars).
+ */
+interface Props {
+  href: string;
+  label: string;
+  class?: string;
+  animateChars?: boolean;
+  [key: string]: unknown;
+}
+const { href, label, class: className, animateChars = true, ...rest } = Astro.props;
+---
+
+<a href={href} class:list={["btn", className]} data-button-animate-chars={animateChars ? "" : undefined} {...rest}
+  ><span class="btn__bg" aria-hidden="true"></span><span class="btn__label">{label}</span></a
+>

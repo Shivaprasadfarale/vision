@@ -1,0 +1,13 @@
+---
+/** FAQ - Workplace design | Ronnsquare — /en/faq/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import FaqPage from "~/components/blocks/block-9-1-faq.astro";
+import { faqPage as faqPageData } from "~/data/blocks/block-9-1-faq";
+import CtaSocial from "~/components/blocks/block-1-12-cta-social.astro";
+import { ctaSocial as ctaSocialData } from "~/data/blocks/block-1-12-cta-social";
+---
+
+<BaseLayout page="faq">
+  <FaqPage {...faqPageData["faq/01"]} />
+  <CtaSocial {...ctaSocialData["faq/02"]} />
+</BaseLayout>

@@ -1,0 +1,50 @@
+---
+/**
+ * Block 1-11 — FAQ: title + animated illustration on the left, accordion on
+ * the right (src/scripts/blocks/block-1-11-faq.js handles toggles and the
+ * illustration animation).
+ */
+import FaqIllustration from "../ui/FaqIllustration.astro";
+import type { FaqProps } from "../../data/blocks/block-1-11-faq";
+
+type Props = FaqProps;
+const { title, animation, items } = Astro.props;
+---
+
+<section class="block-1-11-faq" data-block="block-1-11-faq" aria-label={title}>
+  <div class="block-1-11-faq__container">
+    <div class="block-1-11-faq__left">
+      <h2 class="block-1-11-faq__title anim-hidden" data-anim="title">{title}</h2>
+      <div
+        class="block-1-11-faq__illustration block-1-11-faq__illustration--sable anim-hidden"
+        data-anim="illustration"
+        data-faq-animation={animation}
+      >
+        <FaqIllustration animation={animation} />
+      </div>
+    </div>
+
+    <div class="block-1-11-faq__list">
+      {
+        items.map((item) => (
+          <div class="block-1-11-faq__item anim-hidden" data-anim="item">
+            <button class="block-1-11-faq__question" data-faq-toggle="" aria-expanded="false">
+              <span class="block-1-11-faq__question-text">{item.question}</span>
+              <span class="block-1-11-faq__icon" aria-hidden="true">
+                <svg class="block-1-11-faq__icon-plus" viewBox="0 0 16 16" fill="none">
+                  <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <svg class="block-1-11-faq__icon-minus" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </span>
+            </button>
+            <div class="block-1-11-faq__answer" data-faq-answer="">
+              <div class="block-1-11-faq__answer-inner" set:html={item.answer} />
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

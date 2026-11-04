@@ -1,0 +1,32 @@
+---
+/**
+ * Block 1-10 — CTA card. The background photo drifts with scroll parallax
+ * (-15% → 15%); the card, title (split-line reveal), body and button animate
+ * in on scroll (src/scripts/blocks/block-1-10-cta.js).
+ */
+import WpImage from "../WpImage.astro";
+import Button from "../ui/Button.astro";
+import type { CtaProps } from "../../data/blocks/block-1-10-cta";
+
+type Props = CtaProps;
+const { image, title, body, button } = Astro.props;
+---
+
+<section class="block-1-10-cta" data-block="block-1-10-cta">
+  <div class="block-1-10-cta__bg" data-parallax="trigger" data-parallax-start="-15" data-parallax-end="15">
+    <div class="block-1-10-cta__bg-inner block-1-10-cta__bg-inner--parallax" data-parallax="target">
+      <WpImage src={image} class="attachment-large size-large" alt="" sizes="auto, 100vw" />
+    </div>
+    <div class="block-1-10-cta__overlay"></div>
+  </div>
+
+  <div class="block-1-10-cta__card anim-hidden" data-anim="card">
+    <div class="block-1-10-cta__text">
+      <h2 class="block-1-10-cta__title anim-hidden" data-anim="title">{title}</h2>
+      <p class="block-1-10-cta__body anim-hidden" data-anim="body">{body}</p>
+    </div>
+    <div class="block-1-10-cta__action anim-hidden" data-anim="button">
+      <Button href={button.href} label={button.label} class="btn--parme btn--md block-1-10-cta__btn" />
+    </div>
+  </div>
+</section>

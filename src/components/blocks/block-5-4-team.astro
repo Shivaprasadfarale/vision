@@ -1,0 +1,57 @@
+---
+/**
+ * Block 5-4 — key contacts ticker: member cards (alternating parme/square and
+ * sable/diamond photo frames) rendered twice for a seamless loop, the second
+ * copy hidden from assistive tech (animations: src/scripts/blocks/block-5-4-team.js).
+ */
+import Button from "../ui/Button.astro";
+import type { DnaTeamProps } from "../../data/blocks/block-5-4-team";
+
+type Props = DnaTeamProps;
+const { title, subtitle, members, buttonLabel = "Linkedin" } = Astro.props;
+const frame = (i: number) => (i % 2 === 0 ? { color: "parme", clip: "square" } : { color: "sable", clip: "diamond" });
+const cards = [...members.map((m, i) => ({ ...m, i, dup: false })), ...members.map((m, i) => ({ ...m, i, dup: true }))];
+---
+
+<section class="block-5-4-team" data-block="block-5-4-team" aria-label={title}>
+  <div class="block-5-4-team__header">
+    <h2 class="block-5-4-team__title anim-hidden" data-anim="title">{title}</h2>
+    <p class="block-5-4-team__subtitle anim-hidden" data-anim="subtitle">{subtitle}</p>
+  </div>
+
+  <div class="block-5-4-team__slider">
+    <div class="block-5-4-team__ticker anim-hidden" data-anim="ticker">
+      <div class="block-5-4-team__track" data-anim="track">
+        {
+          cards.map((m) => (
+            <article class="block-5-4-team__card" aria-hidden={m.dup ? "true" : undefined}>
+              <div class={`block-5-4-team__photo block-5-4-team__photo--${frame(m.i).color}`}>
+                <div class={`block-5-4-team__photo-clip block-5-4-team__photo-clip--${frame(m.i).clip}`}>
+                  <img src={`/assets/uploads/${m.photo}`} alt={m.dup ? "" : `Photo of ${m.name}`} loading="lazy" />
+                </div>
+              </div>
+              <div class="block-5-4-team__info">
+                <div class="block-5-4-team__text">
+                  <h3 class="block-5-4-team__name">{m.name}</h3>
+                  <p class="block-5-4-team__role">{m.role}</p>
+                </div>
+                <Button href={m.linkedin} label={buttonLabel} class="btn--parme btn--sm block-5-4-team__btn" tabindex={m.dup ? "-1" : undefined} />
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+
+    <button class="block-5-4-team__arrow block-5-4-team__arrow--prev" data-anim="arrow-prev" aria-label="Previous member">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M19 12H5M5 12L12 5M5 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+    <button class="block-5-4-team__arrow block-5-4-team__arrow--next" data-anim="arrow-next" aria-label="Next member">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+  </div>
+</section>

@@ -1,0 +1,106 @@
+---
+/**
+ * Block 9-1 — FAQ page. Category tabs (desktop sidebar + mobile scroller)
+ * switch between accordion groups; src/scripts/blocks/block-9-1-faq.js drives
+ * the tabs, accordions and illustration via data-faq-* attributes.
+ */
+import FaqIllustration from "../ui/FaqIllustration.astro";
+import type { FaqPageProps } from "../../data/blocks/block-9-1-faq";
+
+type Props = FaqPageProps;
+const { title, animation, categories } = Astro.props;
+---
+
+<section class="block-9-1-faq" data-block="block-9-1-faq" data-entrance="above-fold" aria-label={title}>
+  <div class="block-9-1-faq__container">
+    <div class="block-9-1-faq__sidebar">
+      <div
+        class="block-9-1-faq__illustration block-9-1-faq__illustration--parme anim-hidden"
+        data-anim="illustration"
+        data-faq-animation={animation}
+      >
+        <FaqIllustration animation={animation} />
+      </div>
+
+      <nav class="block-9-1-faq__tabs" aria-label="FAQ categories" data-anim="tabs">
+        {
+          categories.map((cat, i) => (
+            <button
+              class:list={["block-9-1-faq__tab", { "block-9-1-faq__tab--active": i === 0 }]}
+              data-faq-tab={i}
+              type="button"
+              aria-pressed={i === 0 ? "true" : "false"}
+            >
+              {cat.title}
+            </button>
+          ))
+        }
+      </nav>
+    </div>
+
+    <div class="block-9-1-faq__content">
+      <h1 class="block-9-1-faq__title anim-hidden" data-anim="title">{title}</h1>
+
+      <div class="block-9-1-faq__tabs-mobile-wrapper">
+        {/* Mobile twin of the sidebar illustration (desktop instance is hidden on mobile and vice versa) */}
+        <div
+          class="block-9-1-faq__illustration block-9-1-faq__illustration--parme block-9-1-faq__illustration--mobile anim-hidden"
+          data-anim="illustration"
+          data-faq-animation={animation}
+        >
+          <FaqIllustration animation={animation} />
+        </div>
+        <div class="block-9-1-faq__tabs-mobile-scroll">
+          <nav class="block-9-1-faq__tabs-mobile" aria-label="FAQ categories" data-anim="tabs-mobile">
+            {
+              categories.map((cat, i) => (
+                <button
+                  class:list={["block-9-1-faq__tab-mobile", { "block-9-1-faq__tab-mobile--active": i === 0 }]}
+                  data-faq-tab={i}
+                  type="button"
+                  aria-pressed={i === 0 ? "true" : "false"}
+                >
+                  {cat.title}
+                </button>
+              ))
+            }
+          </nav>
+        </div>
+      </div>
+
+      {
+        categories.map((cat, i) => (
+          <div
+            class:list={["block-9-1-faq__group", { "block-9-1-faq__group--active": i === 0 }]}
+            data-faq-category={i}
+            style={i === 0 ? undefined : "display: none"}
+          >
+            {cat.items.map((item) => (
+              <div class="block-9-1-faq__item anim-hidden" data-anim="item">
+                <button class="block-9-1-faq__question" data-faq-toggle="" aria-expanded="false" type="button">
+                  <span class="block-9-1-faq__question-text">{item.question}</span>
+                  <span class="block-9-1-faq__chevron" aria-hidden="true">
+                    <svg
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                      aria-hidden="true"
+                      focusable="false"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M1 1L6 5L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="block-9-1-faq__answer" data-faq-answer="">
+                  <div class="block-9-1-faq__answer-inner" set:html={item.answer} />
+                </div>
+              </div>
+            ))}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

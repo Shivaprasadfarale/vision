@@ -1,0 +1,27 @@
+---
+/**
+ * Block 1-7 (theses) — title + key figures; stats stagger in on scroll
+ * (src/scripts/blocks/block-1-7-theses.js).
+ */
+import type { ThesesProps } from "../../data/blocks/block-1-7-theses";
+
+type Props = ThesesProps;
+const { title, stats } = Astro.props;
+---
+
+<section class="block-1-7-theses" data-block="block-1-7-theses" aria-label={title}>
+  <div class="block-1-7-theses__content">
+    <h2 class="block-1-7-theses__title anim-hidden" data-anim="title">{title}</h2>
+
+    <div class="block-1-7-theses__stats">
+      {
+        stats.map((s) => (
+          <div class="block-1-7-theses__stat anim-hidden" data-anim="stat">
+            <span class="block-1-7-theses__stat-number">{s.number}</span>
+            <span class="block-1-7-theses__stat-label">{s.label}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

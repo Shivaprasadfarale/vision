@@ -1,0 +1,36 @@
+---
+/**
+ * Block 2-2 — concern page "about": title, two staggered photos, description and CTA
+ * (animations: src/scripts/blocks/block-2-2-about.js).
+ */
+import WpImage from "../WpImage.astro";
+import Button from "../ui/Button.astro";
+import type { ConcernAboutProps } from "../../data/blocks/block-2-2-about";
+
+type Props = ConcernAboutProps;
+const { title, images, description, button } = Astro.props;
+---
+
+<section class="block-2-2-about" data-block="block-2-2-about" aria-label="À propos">
+  <div class="block-2-2-about__inner">
+    <h2 class="block-2-2-about__title anim-hidden" data-anim="title" set:html={title} />
+
+    <div class="block-2-2-about__content">
+      <div class="block-2-2-about__images">
+        {
+          images.map((img, i) => (
+            <div class={`block-2-2-about__image block-2-2-about__image--${i + 1} anim-hidden`} data-anim="image">
+              <div class="block-2-2-about__image-inner" data-anim-img-inner="">
+                <WpImage src={img.src} class="attachment-2048x2048 size-2048x2048" alt={img.alt} sizes={img.sizes} />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+      <div class="block-2-2-about__text-group">
+        <p class="block-2-2-about__description anim-hidden" data-anim="description">{description}</p>
+        <Button href={button.href} label={button.label} class="btn--maron btn--md block-2-2-about__btn anim-hidden" data-anim="button" />
+      </div>
+    </div>
+  </div>
+</section>

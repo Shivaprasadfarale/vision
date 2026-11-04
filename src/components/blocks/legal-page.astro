@@ -1,0 +1,45 @@
+---
+/**
+ * Legal page layout (legal notice, privacy policy): title, sticky table of
+ * contents and rich-text sections. The section title is also its anchor id; the
+ * first nav item starts active (scroll-spy hooks: data-legalpage-nav/-section).
+ */
+import type { LegalPageProps } from "../../data/blocks/legal-page";
+
+type Props = LegalPageProps;
+const { title, sections } = Astro.props;
+---
+
+<article class="legal-page">
+  <div class="legal-page__inner">
+    <header class="legal-page__header">
+      <h1 class="legal-page__title">{title}</h1>
+    </header>
+
+    <div class="legal-page__body">
+      <aside class="legal-page__sidebar">
+        <span class="legal-page__sidebar-label">Contents</span>
+        <nav class="legal-page__nav" aria-label="Contents">
+          {
+            sections.map((s, i) => (
+              <a class:list={["legal-page__nav-item", { "legal-page__nav-item--active": i === 0 }]} href={`#${s.title}`} data-legalpage-nav={s.title}>
+                {s.title}
+              </a>
+            ))
+          }
+        </nav>
+      </aside>
+
+      <div class="legal-page__content">
+        {
+          sections.map((s) => (
+            <section class="legal-page__section" id={s.title} data-legalpage-section={s.title}>
+              <h2 class="legal-page__section-title">{s.title}</h2>
+              <div class="legal-page__section-body" set:html={s.body} />
+            </section>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</article>

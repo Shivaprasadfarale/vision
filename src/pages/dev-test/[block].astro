@@ -1,0 +1,24 @@
+---
+/**
+ * DEV-ONLY verification harness: renders every data instance of a block,
+ * wrapped in [data-test-instance], so its DOM can be diffed against the
+ * original markup. Not built in production.
+ */
+const blocks = import.meta.glob("../../components/blocks/*.astro", { eager: true });
+const datas = import.meta.glob("../../data/blocks/*.ts", { eager: true });
+
+export function getStaticPaths() {
+  if (import.meta.env.PROD) return [];
+  return Object.keys(import.meta.glob("../../components/blocks/*.astro")).map((p) => ({ params: { block: p.split("/").pop()!.replace(".astro", "") } }));
+}
+const { block } = Astro.params;
+const Comp = (blocks[`../../components/blocks/${block}.astro`] as any)?.default;
+const dataMod = datas[`../../data/blocks/${block}.ts`] as Record<string, Record<string, any>>;
+const instances = Object.values(dataMod || {}).find((v) => v && typeof v === "object" && !Array.isArray(v) && Object.keys(v).some((k) => k.includes("/"))) || {};
+---
+
+<html><body>
+{Object.entries(instances).map(([key, props]) => (
+  <div data-test-instance={key.replace(/\/(\d+)$/, (_m, n) => "§" + n).replace(/\//g, "__").replace("§", "/")}><Comp {...props} /></div>
+))}
+</body></html>

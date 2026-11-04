@@ -1,0 +1,35 @@
+---
+/**
+ * Block 5-5 — locations map (art-directed desktop/mobile image) with an
+ * address card (animations: src/scripts/blocks/block-5-5-map.js).
+ */
+import type { DnaMapProps } from "../../data/blocks/block-5-5-map";
+
+type Props = DnaMapProps;
+const { title, subtitle, map, groups } = Astro.props;
+---
+
+<section class="block-5-5-map" data-block="block-5-5-map" aria-label={title}>
+  <div class="block-5-5-map__header">
+    <h2 class="block-5-5-map__title anim-hidden" data-anim="title">{title}</h2>
+    <p class="block-5-5-map__subtitle anim-hidden" data-anim="subtitle">{subtitle}</p>
+  </div>
+  <div class="block-5-5-map__map anim-hidden" data-anim="map">
+    <picture>
+      <source media="(max-width: 1023px)" srcset={`/assets/uploads/${map.mobile}`} />
+      <img class="block-5-5-map__img" src={`/assets/uploads/${map.desktop}`} alt={map.alt} loading="lazy" />
+    </picture>
+    <div class="block-5-5-map__card anim-hidden" data-anim="card">
+      {
+        groups.map((g) => (
+          <div class="block-5-5-map__card-group">
+            <h3 class="block-5-5-map__card-label">{g.label}</h3>
+            <p class="block-5-5-map__card-text">
+              {g.lines.map((line, i) => (i ? [<br />, line] : line))}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+---
+/** Privacy Policy - Ronnsquare — /en/privacy-policy/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import LegalPage from "~/components/blocks/legal-page.astro";
+import { legalPage as legalPageData } from "~/data/blocks/legal-page";
+---
+
+<BaseLayout page="privacy-policy">
+  <LegalPage {...legalPageData["privacy-policy/01"]} />
+</BaseLayout>

@@ -1,0 +1,10 @@
+---
+/** Your challenges, our solutions | Ronnsquare — /en/preoccupations/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import Preoccupations from "~/components/blocks/block-1-4-preoccupations.astro";
+import { preoccupations as preoccupationsData } from "~/data/blocks/block-1-4-preoccupations";
+---
+
+<BaseLayout page="preoccupations">
+  <Preoccupations {...preoccupationsData["preoccupations/01"]} />
+</BaseLayout>

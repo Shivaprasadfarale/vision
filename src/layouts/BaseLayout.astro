@@ -23,7 +23,8 @@ const meta = getPageMeta(Astro.props.page);
 const canonical = new URL(meta.path, Astro.site).href;
 const enUrl = meta.path === "/404" ? "/en/" : meta.path;
 const langUrls = JSON.stringify({ en: enUrl, fr: meta.frUrl });
-const breadcrumbs = meta.hasBreadcrumb ? meta.breadcrumbs : [];
+// The original 404 template server-renders a lone "Home" crumb.
+const breadcrumbs = meta.hasBreadcrumb ? meta.breadcrumbs : meta.namespace === "error404" ? [{ label: "Home" }] : [];
 
 const formApi = import.meta.env.PUBLIC_FORM_API_URL || "";
 const callpageId = import.meta.env.PUBLIC_CALLPAGE_ID || "";

@@ -1,0 +1,31 @@
+---
+/** Our workplace design expertise | Ronnsquare — /en/expertises/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import HubHero from "~/components/blocks/block-3-1-hero.astro";
+import { hubHero as hubHeroData } from "~/data/blocks/block-3-1-hero";
+import Services from "~/components/blocks/block-1-7-services.astro";
+import { services as servicesData } from "~/data/blocks/block-1-7-services";
+import Quote from "~/components/blocks/block-1-3-quote.astro";
+import { quote as quoteData } from "~/data/blocks/block-1-3-quote";
+import Theses from "~/components/blocks/block-1-7-theses.astro";
+import { theses as thesesData } from "~/data/blocks/block-1-7-theses";
+import CardReviews from "~/components/blocks/block-1-9-card-reviews.astro";
+import { cardReviews as cardReviewsData } from "~/data/blocks/block-1-9-card-reviews";
+import FaqSection from "~/components/blocks/block-1-11-faq.astro";
+import { faqSection as faqSectionData } from "~/data/blocks/block-1-11-faq";
+import Cta from "~/components/blocks/block-1-10-cta.astro";
+import { cta as ctaData } from "~/data/blocks/block-1-10-cta";
+import CtaSocial from "~/components/blocks/block-1-12-cta-social.astro";
+import { ctaSocial as ctaSocialData } from "~/data/blocks/block-1-12-cta-social";
+---
+
+<BaseLayout page="expertises">
+  <HubHero {...hubHeroData["expertises/01"]} />
+  <Services {...servicesData["expertises/02"]} />
+  <Quote {...quoteData["expertises/03"]} />
+  <Theses {...thesesData["expertises/04"]} />
+  <CardReviews {...cardReviewsData["expertises/05"]} />
+  <FaqSection {...faqSectionData["expertises/06"]} />
+  <Cta {...ctaData["expertises/07"]} />
+  <CtaSocial {...ctaSocialData["expertises/08"]} />
+</BaseLayout>

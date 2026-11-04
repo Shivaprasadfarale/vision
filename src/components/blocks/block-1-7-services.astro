@@ -1,0 +1,101 @@
+---
+/**
+ * Block 1-7 (services) — pinned stacking cards; the totem assembles as cards
+ * stack and is destroyed into its "arranged" state at the end
+ * (src/scripts/blocks/block-1-7-services.js).
+ */
+import WpImage from "../WpImage.astro";
+import Button from "../ui/Button.astro";
+import type { ServicesProps, ServicesTone } from "../../data/blocks/block-1-7-services";
+
+type Props = ServicesProps;
+const { title, layout = ["list", "totem"], cards } = Astro.props;
+const TONES: ServicesTone[] = ["dark", "parme", "dark", "sable"];
+const hasImages = cards.some((c) => c.image);
+---
+
+<section
+  class:list={[
+    "block-1-7-services",
+    layout.map((m) => `block-1-7-services--${m}`),
+    { "block-1-7-services--no-title": !title, "block-1-7-services--no-image": !hasImages },
+  ]}
+  data-block="block-1-7-services"
+  data-services-totem=""
+  data-services-destroy="arranged"
+>
+  <div class="block-1-7-services__pinned" data-anim="pinned">
+    {
+      title && (
+        <div class="block-1-7-services__header">
+          <h2 class="block-1-7-services__title anim-hidden" data-anim="title">{title}</h2>
+        </div>
+      )
+    }
+
+    <div class="block-1-7-services__list">
+      {
+        cards.map((card, i) => (
+          <div
+            class:list={["block-1-7-services__card", `block-1-7-services__card--${card.tone ?? TONES[i % TONES.length]}`]}
+            data-stacking-card=""
+            data-card-index={String(i + 1).padStart(2, "0")}
+          >
+            <div class="block-1-7-services__card-content">
+              <div class="block-1-7-services__card-text">
+                <div class="block-1-7-services__card-top">
+                  <h3 class="block-1-7-services__card-title">{card.title}</h3>
+                </div>
+                <p class="block-1-7-services__card-description">{card.description}</p>
+              </div>
+              <Button href={card.button.href} label={card.button.label} class="btn--md block-1-7-services__btn" />
+            </div>
+            {card.image && (
+              <div class="block-1-7-services__card-images block-1-7-services__card-images--single">
+                <div class="block-1-7-services__card-img" data-parallax="trigger" data-parallax-start="-10" data-parallax-end="10">
+                  <div class="block-1-7-services__card-img-inner" data-parallax="target">
+                    <WpImage
+                      src={card.image.src}
+                      class="attachment-large size-large"
+                      alt={card.image.alt}
+                      sizes="auto, (min-width: 48em) 50vw, calc(100vw - 20px)"
+                      data-stacking-card-img=""
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        ))
+      }
+
+      <div class="block-1-7-services__totem" data-anim="totem" aria-hidden="true">
+        <div class="block-1-7-services__totem-stack" data-totem-stack="">
+          <div class="block-1-7-services__totem-shape" data-totem-shape="diamond">
+            <svg class="equilibre-shape equilibre-shape--diamond" viewBox="0 0 284 284" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M142.929 283.538L0.928784 143.165L141.071 0.93052L283.071 141.304L142.929 283.538ZM142.506 219.214L218.853 141.728L141.494 65.2544L65.1467 142.741L142.506 219.214Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <div class="block-1-7-services__totem-shape" data-totem-shape="circle">
+            <svg class="equilibre-shape equilibre-shape--circle" viewBox="0 0 263 263" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M131.711 262.605C59.5562 263.081 0.475781 204.677 0.000781 132.403C-0.474219 60.1299 57.8334 0.952 129.988 0.476C202.143 0 261.223 58.404 261.698 130.678C262.173 202.951 203.866 262.129 131.711 262.605ZM131.417 217.882C178.949 217.569 217.362 178.582 217.049 130.972C216.736 83.362 177.814 44.885 130.282 45.199C82.7503 45.512 44.3369 84.499 44.6499 132.109C44.9629 179.719 83.8853 218.196 131.417 217.882Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <div class="block-1-7-services__totem-shape" data-totem-shape="triangle">
+            <svg class="equilibre-shape equilibre-shape--triangle" viewBox="0 0 132 67" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M132.07 66.144L66.035 0L0 66.144H132.07Z" fill="currentColor"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

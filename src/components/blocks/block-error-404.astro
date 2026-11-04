@@ -1,0 +1,19 @@
+---
+/**
+ * 404 error block: big title, subtitle and a CTA back to the projects
+ * (entrance animation: src/scripts/blocks/block-error-404.js).
+ */
+import Button from "../ui/Button.astro";
+import type { Error404Props } from "../../data/blocks/block-error-404";
+
+type Props = Error404Props;
+const { title, subtitle, button } = Astro.props;
+---
+
+<section class="block-error-404" data-block="block-error-404" data-entrance="above-fold">
+  <h1 class="block-error-404__title anim-hidden" data-anim="title">{title}</h1>
+  <p class="block-error-404__subtitle anim-hidden" data-anim="subtitle">{subtitle}</p>
+  <div class="block-error-404__cta anim-hidden" data-anim="cta">
+    <Button href={button.href} label={button.label} class="btn--maron btn--md" />
+  </div>
+</section>

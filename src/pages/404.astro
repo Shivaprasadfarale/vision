@@ -1,0 +1,13 @@
+---
+/** Page not found - Ronnsquare — /404 */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import Error404 from "~/components/blocks/block-error-404.astro";
+import { error404 as error404Data } from "~/data/blocks/block-error-404";
+import Projects from "~/components/blocks/block-1-8-projects.astro";
+import { projects as projectsData } from "~/data/blocks/block-1-8-projects";
+---
+
+<BaseLayout page="404">
+  <Error404 {...error404Data["404/01"]} />
+  <Projects {...projectsData["404/02"]} />
+</BaseLayout>

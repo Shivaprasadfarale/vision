@@ -1,0 +1,18 @@
+---
+/**
+ * Block 0-1 — full-width image (reveal driven by src/scripts/blocks/block-0-1-fullimage.js).
+ */
+import WpImage from "../WpImage.astro";
+import type { FullImageProps } from "../../data/blocks/block-0-1-fullimage";
+
+type Props = FullImageProps;
+const { image } = Astro.props;
+---
+
+<section class="block-0-1-fullimage" data-block="block-0-1-fullimage">
+  <div class="block-0-1-fullimage__image-wrapper anim-hidden" data-anim="image">
+    <div class="block-0-1-fullimage__image-inner" data-anim-img-inner="">
+      <WpImage src={image.src} class="block-0-1-fullimage__image" alt={image.alt} sizes="auto, (max-width: 1200px) 100vw, 1200px" />
+    </div>
+  </div>
+</section>

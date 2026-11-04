@@ -1,0 +1,37 @@
+---
+/** Technical delivery & fit-out | Ronnsquare — /en/expertises/technical-execution/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import ExpertiseHero from "~/components/blocks/block-4-1-hero.astro";
+import { expertiseHero as expertiseHeroData } from "~/data/blocks/block-4-1-hero";
+import RunningLine from "~/components/blocks/block-1-2-running-line.astro";
+import { runningLine as runningLineData } from "~/data/blocks/block-1-2-running-line";
+import ExpertiseAdvantages from "~/components/blocks/block-4-2-advantages.astro";
+import { expertiseAdvantages as expertiseAdvantagesData } from "~/data/blocks/block-4-2-advantages";
+import Projects from "~/components/blocks/block-1-8-projects.astro";
+import { projects as projectsData } from "~/data/blocks/block-1-8-projects";
+import Quote from "~/components/blocks/block-1-3-quote.astro";
+import { quote as quoteData } from "~/data/blocks/block-1-3-quote";
+import CardReviews from "~/components/blocks/block-1-9-card-reviews.astro";
+import { cardReviews as cardReviewsData } from "~/data/blocks/block-1-9-card-reviews";
+import FaqSection from "~/components/blocks/block-1-11-faq.astro";
+import { faqSection as faqSectionData } from "~/data/blocks/block-1-11-faq";
+import RelevantAccompagnement from "~/components/blocks/block-4-3-relevant-accompagnement.astro";
+import { relevantAccompagnement as relevantAccompagnementData } from "~/data/blocks/block-4-3-relevant-accompagnement";
+import Cta from "~/components/blocks/block-1-10-cta.astro";
+import { cta as ctaData } from "~/data/blocks/block-1-10-cta";
+import CtaSocial from "~/components/blocks/block-1-12-cta-social.astro";
+import { ctaSocial as ctaSocialData } from "~/data/blocks/block-1-12-cta-social";
+---
+
+<BaseLayout page="expertises/technical-execution">
+  <ExpertiseHero {...expertiseHeroData["expertises/technical-execution/01"]} />
+  <RunningLine {...runningLineData["expertises/technical-execution/02"]} />
+  <ExpertiseAdvantages {...expertiseAdvantagesData["expertises/technical-execution/03"]} />
+  <Projects {...projectsData["expertises/technical-execution/04"]} />
+  <Quote {...quoteData["expertises/technical-execution/05"]} />
+  <CardReviews {...cardReviewsData["expertises/technical-execution/06"]} />
+  <FaqSection {...faqSectionData["expertises/technical-execution/07"]} />
+  <RelevantAccompagnement {...relevantAccompagnementData["expertises/technical-execution/08"]} />
+  <Cta {...ctaData["expertises/technical-execution/09"]} />
+  <CtaSocial {...ctaSocialData["expertises/technical-execution/10"]} />
+</BaseLayout>

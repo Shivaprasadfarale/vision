@@ -1,0 +1,40 @@
+---
+/** Ronnsquare - Workplace Design & Fit-Out in Paris — /en/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import HomeHero from "~/components/blocks/block-1-1-hero.astro";
+import { hero as heroData } from "~/data/blocks/block-1-1-hero";
+import RunningLine from "~/components/blocks/block-1-2-running-line.astro";
+import { runningLine as runningLineData } from "~/data/blocks/block-1-2-running-line";
+import Quote from "~/components/blocks/block-1-3-quote.astro";
+import { quote as quoteData } from "~/data/blocks/block-1-3-quote";
+import Preoccupations from "~/components/blocks/block-1-4-preoccupations.astro";
+import { preoccupations as preoccupationsData } from "~/data/blocks/block-1-4-preoccupations";
+import Advantages from "~/components/blocks/block-1-5-advantages.astro";
+import { advantages as advantagesData } from "~/data/blocks/block-1-5-advantages";
+import Theses from "~/components/blocks/block-1-7-theses.astro";
+import { theses as thesesData } from "~/data/blocks/block-1-7-theses";
+import Services from "~/components/blocks/block-1-7-services.astro";
+import { services as servicesData } from "~/data/blocks/block-1-7-services";
+import Projects from "~/components/blocks/block-1-8-projects.astro";
+import { projects as projectsData } from "~/data/blocks/block-1-8-projects";
+import CardReviews from "~/components/blocks/block-1-9-card-reviews.astro";
+import { cardReviews as cardReviewsData } from "~/data/blocks/block-1-9-card-reviews";
+import Cta from "~/components/blocks/block-1-10-cta.astro";
+import { cta as ctaData } from "~/data/blocks/block-1-10-cta";
+import FaqSection from "~/components/blocks/block-1-11-faq.astro";
+import { faqSection as faqSectionData } from "~/data/blocks/block-1-11-faq";
+---
+
+<BaseLayout page="home">
+  <HomeHero {...heroData["home/01"]} />
+  <RunningLine {...runningLineData["home/02"]} />
+  <Quote {...quoteData["home/03"]} />
+  <Preoccupations {...preoccupationsData["home/04"]} />
+  <Advantages {...advantagesData["home/05"]} />
+  <Theses {...thesesData["home/06"]} />
+  <Services {...servicesData["home/07"]} />
+  <Projects {...projectsData["home/08"]} />
+  <CardReviews {...cardReviewsData["home/09"]} />
+  <Cta {...ctaData["home/10"]} />
+  <FaqSection {...faqSectionData["home/11"]} />
+</BaseLayout>

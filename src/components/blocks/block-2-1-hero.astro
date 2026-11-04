@@ -1,0 +1,29 @@
+---
+/**
+ * Block 2-1 — concern page hero: title, parallax photo and overlay card with CTA
+ * (animations: src/scripts/blocks/block-2-1-hero.js).
+ */
+import WpImage from "../WpImage.astro";
+import Button from "../ui/Button.astro";
+import type { ConcernHeroProps } from "../../data/blocks/block-2-1-hero";
+
+type Props = ConcernHeroProps;
+const { title, image, description, button } = Astro.props;
+---
+
+<section class="block-2-1-hero" data-block="block-2-1-hero" data-entrance="above-fold" aria-label={title}>
+  <h1 class="block-2-1-hero__heading anim-hidden" data-anim="title">{title}</h1>
+
+  <div class="block-2-1-hero__image anim-hidden" data-anim="image" data-parallax="trigger" data-parallax-start="-10" data-parallax-end="10">
+    <div class="block-2-1-hero__image-inner" data-anim-img-inner="">
+      <div class="block-2-1-hero__image-parallax" data-parallax="target">
+        <WpImage src={image.src} class="attachment-full size-full" alt={image.alt} loading="eager" fetchpriority="high" sizes={image.sizes} />
+      </div>
+    </div>
+
+    <div class="block-2-1-hero__card anim-hidden" data-anim="card">
+      <p class="block-2-1-hero__description">{description}</p>
+      <Button href={button.href} label={button.label} class="btn--maron btn--lg block-2-1-hero__btn" />
+    </div>
+  </div>
+</section>

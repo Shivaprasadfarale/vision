@@ -1,0 +1,46 @@
+---
+/** Our DNA and our team | Ronnsquare — /en/dna-team/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import DnaHero from "~/components/blocks/block-5-1-hero.astro";
+import { dnaHero as dnaHeroData } from "~/data/blocks/block-5-1-hero";
+import Theses from "~/components/blocks/block-1-7-theses.astro";
+import { theses as thesesData } from "~/data/blocks/block-1-7-theses";
+import Quote from "~/components/blocks/block-1-3-quote.astro";
+import { quote as quoteData } from "~/data/blocks/block-1-3-quote";
+import DnaMethode from "~/components/blocks/block-5-6-methode.astro";
+import { dnaMethode as dnaMethodeData } from "~/data/blocks/block-5-6-methode";
+import Seo from "~/components/blocks/block-7-2-seo.astro";
+import { seo as seoData } from "~/data/blocks/block-7-2-seo";
+import DnaValues from "~/components/blocks/block-5-2-advantages.astro";
+import { dnaValues as dnaValuesData } from "~/data/blocks/block-5-2-advantages";
+import DnaEsg from "~/components/blocks/block-5-3-advantages.astro";
+import { dnaEsg as dnaEsgData } from "~/data/blocks/block-5-3-advantages";
+import RunningLine from "~/components/blocks/block-1-2-running-line.astro";
+import { runningLine as runningLineData } from "~/data/blocks/block-1-2-running-line";
+import DnaTeam from "~/components/blocks/block-5-4-team.astro";
+import { dnaTeam as dnaTeamData } from "~/data/blocks/block-5-4-team";
+import DnaMap from "~/components/blocks/block-5-5-map.astro";
+import { dnaMap as dnaMapData } from "~/data/blocks/block-5-5-map";
+import CardReviews from "~/components/blocks/block-1-9-card-reviews.astro";
+import { cardReviews as cardReviewsData } from "~/data/blocks/block-1-9-card-reviews";
+import FaqSection from "~/components/blocks/block-1-11-faq.astro";
+import { faqSection as faqSectionData } from "~/data/blocks/block-1-11-faq";
+import CtaSocial from "~/components/blocks/block-1-12-cta-social.astro";
+import { ctaSocial as ctaSocialData } from "~/data/blocks/block-1-12-cta-social";
+---
+
+<BaseLayout page="dna-team">
+  <DnaHero {...dnaHeroData["dna-team/01"]} />
+  <Theses {...thesesData["dna-team/02"]} />
+  <Quote {...quoteData["dna-team/03"]} />
+  <DnaMethode {...dnaMethodeData["dna-team/04"]} />
+  <Seo {...seoData["dna-team/05"]} />
+  <DnaValues {...dnaValuesData["dna-team/06"]} />
+  <DnaEsg {...dnaEsgData["dna-team/07"]} />
+  <RunningLine {...runningLineData["dna-team/08"]} />
+  <DnaTeam {...dnaTeamData["dna-team/09"]} />
+  <DnaMap {...dnaMapData["dna-team/10"]} />
+  <CardReviews {...cardReviewsData["dna-team/11"]} />
+  <FaqSection {...faqSectionData["dna-team/12"]} />
+  <CtaSocial {...ctaSocialData["dna-team/13"]} />
+</BaseLayout>

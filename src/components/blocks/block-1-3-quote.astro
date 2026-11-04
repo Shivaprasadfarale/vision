@@ -1,0 +1,84 @@
+---
+/**
+ * Block 1-3 — pinned quote whose text highlights word by word while the
+ * totem animates (src/scripts/blocks/block-1-3-quote.js). The `fly-in`
+ * variant uses four independent shapes; every other variant uses the stacked
+ * totem SVG (the `stretch` variant widens its viewBox so shapes can travel).
+ */
+import type { QuoteProps } from "../../data/blocks/block-1-3-quote";
+
+type Props = QuoteProps;
+const { text, modifiers, exit } = Astro.props;
+const flyIn = modifiers.includes("fly-in");
+const totemViewBox = modifiers.includes("stretch") ? "-80 -210 444 1031" : "0 0 284 611";
+const cutout = "var(--equilibre-cutout-fill, var(--color-brand-parme, #DBB6FC))";
+---
+
+<section class:list={["block-1-3-quote", modifiers.map((m) => `block-1-3-quote--${m}`)]} data-block="block-1-3-quote" data-quote-exit={exit}>
+  <div class="block-1-3-quote__pin-wrapper">
+    <div class="block-1-3-quote__content">
+      <p class="block-1-3-quote__text" data-highlight-text="" data-anim="text">{text}</p>
+    </div>
+
+    <div class="block-1-3-quote__totem" data-anim="totem">
+      {
+        flyIn ? (
+          <>
+            <div class="block-1-3-quote__totem-shape" data-totem-shape="square">
+              <svg class="equilibre-shape equilibre-shape--square" viewBox="0 0 132 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="132" height="110" fill="currentColor"></rect>
+              </svg>
+            </div>
+            <div class="block-1-3-quote__totem-shape" data-totem-shape="diamond">
+              <svg class="equilibre-shape equilibre-shape--diamond" viewBox="0 0 284 284" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M142.929 283.538L0.928784 143.165L141.071 0.93052L283.071 141.304L142.929 283.538Z" fill="currentColor"></path>
+                <path d="M142.506 219.214L218.853 141.728L141.494 65.2544L65.1467 142.741L142.506 219.214Z" fill={cutout}></path>
+              </svg>
+            </div>
+            <div class="block-1-3-quote__totem-shape" data-totem-shape="circle">
+              <svg class="equilibre-shape equilibre-shape--circle" viewBox="0 0 263 263" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path
+                  d="M131.711 262.605C59.5562 263.081 0.475781 204.677 0.000781 132.403C-0.474219 60.1299 57.8334 0.952 129.988 0.476C202.143 0 261.223 58.404 261.698 130.678C262.173 202.951 203.866 262.129 131.711 262.605Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M131.417 217.882C178.949 217.569 217.362 178.582 217.049 130.972C216.736 83.362 177.814 44.885 130.282 45.199C82.7503 45.512 44.3369 84.499 44.6499 132.109C44.9629 179.719 83.8853 218.196 131.417 217.882Z"
+                  fill={cutout}
+                ></path>
+              </svg>
+            </div>
+            <div class="block-1-3-quote__totem-shape" data-totem-shape="triangle">
+              <svg class="equilibre-shape equilibre-shape--triangle" viewBox="0 0 132 67" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M132.07 66.144L66.035 0L0 66.144H132.07Z" fill="currentColor"></path>
+              </svg>
+            </div>
+          </>
+        ) : (
+          <svg class="equilibre-totem" viewBox={totemViewBox} overflow="visible" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g class="equilibre-totem__sway" data-shape="sway">
+              <g class="equilibre-totem__diamond" data-shape="diamond">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M141.1.9L.9,143.2l142,140.4,140.1-142.2L141.1.9ZM142.5,219.2l-77.4-76.5,76.3-77.5,77.4,76.5-76.3,77.5Z"
+                  fill="currentColor"
+                ></path>
+              </g>
+              <g class="equilibre-totem__circle" data-shape="circle">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M142.9,283.3c-72.2.5-130.5,59.7-130,131.9.5,72.3,59.6,130.7,131.7,130.2,72.2-.5,130.5-59.7,130-131.9-.5-72.3-59.6-130.7-131.7-130.2ZM144.3,500.7c-47.5.3-86.5-38.2-86.8-85.8-.3-47.6,38.1-86.6,85.6-86.9,47.5-.3,86.5,38.2,86.8,85.8.3,47.6-38.1,86.6-85.6,86.9Z"
+                  fill="currentColor"
+                ></path>
+              </g>
+            </g>
+            <g class="equilibre-totem__triangle" data-shape="triangle">
+              <path d="M207.91 611L141.875 544.856L75.8398 611H207.91Z" fill="currentColor"></path>
+            </g>
+          </svg>
+        )
+      }
+    </div>
+  </div>
+</section>

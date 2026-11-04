@@ -1,0 +1,37 @@
+---
+/** Complex fit-out projects | Ronnsquare — /en/preoccupations/complex-projects/ */
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import ConcernHero from "~/components/blocks/block-2-1-hero.astro";
+import { concernHero as concernHeroData } from "~/data/blocks/block-2-1-hero";
+import ConcernAbout from "~/components/blocks/block-2-2-about.astro";
+import { concernAbout as concernAboutData } from "~/data/blocks/block-2-2-about";
+import Quote from "~/components/blocks/block-1-3-quote.astro";
+import { quote as quoteData } from "~/data/blocks/block-1-3-quote";
+import Services from "~/components/blocks/block-1-7-services.astro";
+import { services as servicesData } from "~/data/blocks/block-1-7-services";
+import ConcernTrust from "~/components/blocks/block-2-3-trust.astro";
+import { concernTrust as concernTrustData } from "~/data/blocks/block-2-3-trust";
+import FaqSection from "~/components/blocks/block-1-11-faq.astro";
+import { faqSection as faqSectionData } from "~/data/blocks/block-1-11-faq";
+import Projects from "~/components/blocks/block-1-8-projects.astro";
+import { projects as projectsData } from "~/data/blocks/block-1-8-projects";
+import CardReviews from "~/components/blocks/block-1-9-card-reviews.astro";
+import { cardReviews as cardReviewsData } from "~/data/blocks/block-1-9-card-reviews";
+import Cta from "~/components/blocks/block-1-10-cta.astro";
+import { cta as ctaData } from "~/data/blocks/block-1-10-cta";
+import CtaSocial from "~/components/blocks/block-1-12-cta-social.astro";
+import { ctaSocial as ctaSocialData } from "~/data/blocks/block-1-12-cta-social";
+---
+
+<BaseLayout page="preoccupations/complex-projects">
+  <ConcernHero {...concernHeroData["preoccupations/complex-projects/01"]} />
+  <ConcernAbout {...concernAboutData["preoccupations/complex-projects/02"]} />
+  <Quote {...quoteData["preoccupations/complex-projects/03"]} />
+  <Services {...servicesData["preoccupations/complex-projects/04"]} />
+  <ConcernTrust {...concernTrustData["preoccupations/complex-projects/05"]} />
+  <FaqSection {...faqSectionData["preoccupations/complex-projects/06"]} />
+  <Projects {...projectsData["preoccupations/complex-projects/07"]} />
+  <CardReviews {...cardReviewsData["preoccupations/complex-projects/08"]} />
+  <Cta {...ctaData["preoccupations/complex-projects/09"]} />
+  <CtaSocial {...ctaSocialData["preoccupations/complex-projects/10"]} />
+</BaseLayout>

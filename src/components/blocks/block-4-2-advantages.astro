@@ -1,0 +1,66 @@
+---
+/**
+ * Block 4-2 — expertise services: left/right card columns framing the
+ * scroll-driven shape totem (animations: src/scripts/blocks/block-4-2-advantages.js).
+ */
+import type { ExpertiseAdvantagesProps, AdvantageCard } from "../../data/blocks/block-4-2-advantages";
+
+type Props = ExpertiseAdvantagesProps;
+const { title, left, right } = Astro.props;
+const ariaLabel = title.replace(/<[^>]*>/g, "");
+const cols: ["left" | "right", AdvantageCard[]][] = [
+  ["left", left],
+  ["right", right],
+];
+---
+
+<section class="block-4-2-advantages" data-block="block-4-2-advantages" aria-label={ariaLabel}>
+  <div class="block-4-2-advantages__header">
+    <h2 class="block-4-2-advantages__title anim-hidden" data-anim="title" set:html={title} />
+  </div>
+  <div class="block-4-2-advantages__body">
+    {
+      cols.map(([side, cards]) => (
+        <Fragment>
+          <div class={`block-4-2-advantages__col block-4-2-advantages__col--${side}`}>
+            {cards.map((card) => (
+              <article class="block-4-2-advantages__card anim-hidden" data-anim="card">
+                <div class="block-4-2-advantages__icon" aria-hidden="true">
+                  <img src={`/assets/uploads/2026/06/${card.icon}.svg`} alt="" width="0" height="0" loading="lazy" />
+                </div>
+                <h3 class="block-4-2-advantages__card-title">{card.title}</h3>
+                <p class="block-4-2-advantages__card-desc">{card.description}</p>
+              </article>
+            ))}
+          </div>
+          {side === "left" && (
+            <div class="block-4-2-advantages__totem" data-anim="totem" aria-hidden="true">
+              <div class="block-4-2-advantages__totem-inner" data-anim="totem-inner">
+                <svg class="service-totem" viewBox="164 0 156 349" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <g data-shape="diamond">
+                    <path d="M241.848 0L179.61 62.2378L241.848 124.476L304.086 62.2378L241.848 0Z" fill="currentColor" />
+                  </g>
+                  <g data-shape="cup">
+                    <path
+                      d="M186.277 123.707C186.277 154.399 211.156 179.278 241.847 179.278C272.539 179.278 297.418 154.399 297.418 123.707H186.277Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <g data-shape="rect">
+                    <path d="M291.507 179.22H192.188V237.843H291.507V179.22Z" fill="currentColor" />
+                  </g>
+                  <g data-shape="circle">
+                    <path
+                      d="M297.418 293.297C297.418 262.606 272.538 237.726 241.847 237.726C211.157 237.726 186.277 262.606 186.277 293.297C186.277 323.988 211.157 348.868 241.847 348.868C272.538 348.868 297.418 323.988 297.418 293.297Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          )}
+        </Fragment>
+      ))
+    }
+  </div>
+</section>

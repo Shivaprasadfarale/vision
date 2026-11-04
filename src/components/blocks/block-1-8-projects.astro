@@ -1,0 +1,94 @@
+---
+/**
+ * Block 1-8 — project cards. Cards fade/slide in on scroll; each card's
+ * slideshow advances by hovering the invisible zones (desktop) or via the
+ * scroll bars (src/scripts/blocks/block-1-8-projects.js). In "mixed" grids
+ * `--full` cards span the whole row. The listing variant appends cards
+ * through the "See more" load-more button (data-load-more*).
+ */
+import WpImage from "../WpImage.astro";
+import Button from "../ui/Button.astro";
+import type { ProjectsProps } from "../../data/blocks/block-1-8-projects";
+
+type Props = ProjectsProps;
+const { grid, related = false, ariaLabel, title, cards, cta } = Astro.props;
+
+const SIZES_FULL = "auto, (min-width: 48em) calc(100vw - 120px), 100vw";
+const SIZES_HALF = "auto, (min-width: 48em) calc((100vw - 160px) / 2), 100vw";
+const loadMore = cta?.kind === "load-more" ? cta : undefined;
+---
+
+<section
+  class:list={["block-1-8-projects", { "block-1-8-projects--related": related }]}
+  data-block="block-1-8-projects"
+  data-grid={grid}
+  data-load-more={loadMore ? "" : undefined}
+  data-per-page={loadMore?.perPage}
+  data-offset={loadMore?.offset}
+  data-total={loadMore?.total}
+  data-exclude={loadMore?.exclude.join(",")}
+  aria-label={ariaLabel}
+>
+  {title && <h2 class="block-1-8-projects__title anim-hidden" data-anim="title" set:html={title} />}
+
+  <div class="block-1-8-projects__grid">
+    {
+      cards.map((card) => (
+        <article
+          class:list={["block-1-8-projects__card", { "block-1-8-projects__card--full": card.full }, "anim-hidden"]}
+          data-anim="card"
+          data-has-slideshow=""
+        >
+          <div class="block-1-8-projects__slideshow" data-anim-img-inner="">
+            {card.slides.map((slide, i) => (
+              <WpImage
+                src={slide.src}
+                class:list={["block-1-8-projects__image", { "block-1-8-projects__image--active": i === 0 }]}
+                alt={slide.alt}
+                data-slide={i}
+                sizes={card.full ? SIZES_FULL : SIZES_HALF}
+              />
+            ))}
+            <div class="block-1-8-projects__gradient" aria-hidden="true" />
+          </div>
+          <div class="block-1-8-projects__zones" aria-hidden="true">
+            {card.slides.map((_, i) => (
+              <div class="block-1-8-projects__zone" data-slide-index={i} />
+            ))}
+          </div>
+          <div class="block-1-8-projects__info">
+            <h3 class="block-1-8-projects__company">{card.company}</h3>
+            <div class="block-1-8-projects__details">
+              <p class="block-1-8-projects__location">{card.location}</p>
+            </div>
+            <Button href={card.href} label="Discover" class="btn--parme btn--md block-1-8-projects__btn" />
+          </div>
+          <div class="block-1-8-projects__scroll-bar" aria-hidden="true">
+            {card.slides.map((_, i) => (
+              <span class="block-1-8-projects__bar" data-bar-index={i} />
+            ))}
+          </div>
+        </article>
+      ))
+    }
+  </div>
+
+  {
+    cta?.kind === "link" && (
+      <div class="block-1-8-projects__cta anim-hidden" data-anim="cta">
+        <Button href={cta.href} label={cta.label} class="btn--maron btn--md block-1-8-projects__cta-btn" />
+      </div>
+    )
+  }
+  {
+    loadMore && (
+      <div class="block-1-8-projects__cta block-1-8-projects__cta--show-more anim-hidden" data-anim="cta">
+        <p class="block-1-8-projects__counter">{loadMore.counter}</p>
+        <button class="btn btn--maron btn--md block-1-8-projects__cta-btn" type="submit" data-button-animate-chars="" data-load-more-btn="">
+          <span class="btn__bg" aria-hidden="true" />
+          <span class="btn__label">{loadMore.label}</span>
+        </button>
+      </div>
+    )
+  }
+</section>

@@ -1,0 +1,113 @@
+---
+/**
+ * Block 1-9 — client testimonials carousel. Media and quote slides are paired
+ * by data-slide-index; arrows, dots and drag are wired up by
+ * src/scripts/blocks/block-1-9-card-reviews.js.
+ */
+import WpImage from "../WpImage.astro";
+import type { CardReviewsProps } from "../../data/blocks/block-1-9-card-reviews";
+
+type Props = CardReviewsProps;
+const { title, subtitle, slides } = Astro.props;
+const prev = "M19 12H5M5 12L12 5M5 12L12 19";
+const next = "M5 12H19M19 12L12 5M19 12L12 19";
+---
+
+<section class="block-1-9-card-reviews" data-block="block-1-9-card-reviews">
+  <div class="block-1-9-card-reviews__header">
+    <h2 class="block-1-9-card-reviews__title anim-hidden" data-anim="title">{title}</h2>
+    <p class="block-1-9-card-reviews__subtitle anim-hidden" data-anim="subtitle">{subtitle}</p>
+  </div>
+
+  <div class="block-1-9-card-reviews__body anim-hidden" data-anim="body">
+    <div class="block-1-9-card-reviews__video-col">
+      {
+        slides.map((s, i) => (
+          <div class="block-1-9-card-reviews__media-wrapper" data-slide-index={i} data-media-type="image">
+            <WpImage
+              src={s.image.src}
+              alt={s.image.alt}
+              class="block-1-9-card-reviews__image"
+              sizes="auto, (min-width: 48em) calc((100vw - 160px) / 2), calc(100vw - 20px)"
+            />
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="block-1-9-card-reviews__content-col">
+      <div class="block-1-9-card-reviews__nav" data-anim="nav">
+        <button class="block-1-9-card-reviews__arrow block-1-9-card-reviews__arrow--prev" aria-label="Previous testimonial">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d={prev} stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <button class="block-1-9-card-reviews__arrow block-1-9-card-reviews__arrow--next" aria-label="Next testimonial">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d={next} stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="block-1-9-card-reviews__slides-container" aria-live="polite">
+        {
+          slides.map((s, i) => (
+            <div class="block-1-9-card-reviews__slide" data-slide-index={i}>
+              <blockquote class="block-1-9-card-reviews__quote">"{s.quote}"</blockquote>
+              <div class="block-1-9-card-reviews__author">
+                <WpImage
+                  src={s.avatar}
+                  alt={s.name}
+                  class="block-1-9-card-reviews__author-avatar"
+                  sizes="auto, (max-width: 150px) 100vw, 150px"
+                />
+                <div class="block-1-9-card-reviews__author-info">
+                  <span class="block-1-9-card-reviews__author-name">{s.name}</span>
+                  <span class="block-1-9-card-reviews__author-title">{s.role}</span>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="block-1-9-card-reviews__dots block-1-9-card-reviews__dots--desktop" role="tablist">
+        {
+          slides.map((_, i) => (
+            <button
+              class:list={["block-1-9-card-reviews__dot", { "is-active": i === 0 }]}
+              role="tab"
+              aria-selected={i === 0 ? "true" : "false"}
+              aria-label={`Testimonial ${i + 1}`}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="block-1-9-card-reviews__controls-mobile anim-hidden" data-anim="controls-mobile">
+    <button class="block-1-9-card-reviews__arrow block-1-9-card-reviews__arrow--prev" aria-label="Previous testimonial">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d={prev} stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+    <div class="block-1-9-card-reviews__dots block-1-9-card-reviews__dots--mobile" role="tablist">
+      {
+        slides.map((_, i) => (
+          <button
+            class:list={["block-1-9-card-reviews__dot", { "is-active": i === 0 }]}
+            role="tab"
+            aria-selected={i === 0 ? "true" : "false"}
+            aria-label={`Testimonial ${i + 1}`}
+          />
+        ))
+      }
+    </div>
+    <button class="block-1-9-card-reviews__arrow block-1-9-card-reviews__arrow--next" aria-label="Next testimonial">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d={next} stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+  </div>
+</section>

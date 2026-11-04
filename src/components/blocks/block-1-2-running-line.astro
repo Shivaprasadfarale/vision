@@ -1,0 +1,55 @@
+---
+/**
+ * Block 1-2 — running line of latest projects. The track scrolls continuously
+ * and the arrows nudge it (src/scripts/blocks/block-1-2-running-line.js); the
+ * item set is rendered twice for a seamless loop.
+ */
+import WpImage from "../WpImage.astro";
+import type { RunningLineProps } from "../../data/blocks/block-1-2-running-line";
+
+type Props = RunningLineProps;
+const { title, items } = Astro.props;
+const loop = [...items.map((item) => ({ item, clone: false })), ...items.map((item) => ({ item, clone: true }))];
+---
+
+<section class="block-1-2-running-line" data-block="block-1-2-running-line" aria-label={title}>
+  <h2 class="block-1-2-running-line__title anim-hidden" data-anim="title">{title}</h2>
+
+  <div class="block-1-2-running-line__slider">
+    <div class="block-1-2-running-line__ticker anim-hidden" data-anim="ticker">
+      <div class="block-1-2-running-line__track" data-anim="track">
+        {
+          loop.map(({ item, clone }) => (
+            <a
+              href={item.href}
+              class="block-1-2-running-line__item"
+              aria-hidden={clone ? "true" : undefined}
+              tabindex={clone ? "-1" : undefined}
+            >
+              <div class="block-1-2-running-line__item-img">
+                <div class="block-1-2-running-line__item-frame">
+                  <WpImage src={item.image.src} class="attachment-large size-large" alt={clone ? "" : item.image.alt} sizes="auto, 768px" />
+                </div>
+              </div>
+              <div class="block-1-2-running-line__item-caption">
+                <span class="block-1-2-running-line__item-type">{item.type}</span>
+                <span class="block-1-2-running-line__item-meta">{item.meta}</span>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <button class="block-1-2-running-line__arrow block-1-2-running-line__arrow--prev" data-anim="arrow-prev" aria-label="Previous project">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M19 12H5M5 12L12 5M5 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+    <button class="block-1-2-running-line__arrow block-1-2-running-line__arrow--next" data-anim="arrow-next" aria-label="Next project">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+  </div>
+</section>
