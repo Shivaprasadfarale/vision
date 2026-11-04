@@ -1,0 +1,42 @@
+---
+/**
+ * Responsive image backed by the media registry (src/data/media.json), which
+ * keeps the original intrinsic dimensions and srcset candidates for every
+ * upload. `src` is the path relative to /assets/uploads/.
+ */
+import media from "../data/media.json";
+
+type MediaEntry = { w?: number; h?: number; srcset: [string, string][] };
+
+interface Props {
+  src: string;
+  alt?: string;
+  sizes?: string;
+  class?: string;
+  loading?: "lazy" | "eager";
+  decoding?: "async" | "sync" | "auto";
+  fetchpriority?: "high" | "low" | "auto";
+  width?: number;
+  height?: number;
+  [key: string]: unknown;
+}
+
+const { src, alt = "", sizes, class: className, loading = "lazy", decoding = "async", fetchpriority, width, height, ...rest } = Astro.props;
+const entry = (media as Record<string, MediaEntry>)[src];
+const base = "/assets/uploads/";
+const srcset = entry?.srcset?.length ? entry.srcset.map(([u, w]) => `${base}${u} ${w}`).join(", ") : undefined;
+---
+
+<img
+  width={width ?? entry?.w}
+  height={height ?? entry?.h}
+  src={base + src}
+  class={className}
+  alt={alt}
+  sizes={srcset ? sizes : undefined}
+  srcset={srcset}
+  loading={loading === "eager" ? undefined : loading}
+  decoding={decoding}
+  fetchpriority={fetchpriority}
+  {...rest}
+/>

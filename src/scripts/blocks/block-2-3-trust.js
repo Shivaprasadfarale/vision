@@ -1,0 +1,27 @@
+// @ts-nocheck
+// Ported from the original Ronnsquare theme bundle (block-2-3-trust-anim).
+import { d as a, S as l } from "../vendor/gsap-core.js";
+a.registerPlugin(l);
+function c(t) {
+  if (!t) return;
+  const o = window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    i = t.querySelector('[data-anim="title"]'),
+    r = t.querySelectorAll('[data-anim="card"]'),
+    n = [i, ...r].filter(Boolean);
+  if (o) {
+    a.set(n, { autoAlpha: 1, y: 0 });
+    return;
+  }
+  a.set([...r].filter(Boolean), { autoAlpha: 0, y: 32 });
+  const e = a.timeline({ id: "block-2-3-trust", paused: !0 });
+  (i && e.splitReveal(i, { duration: 1.2 }),
+    r.length && e.fadeSlideUp([...r], { stagger: 0.1, duration: 0.7 }, "-=0.6"),
+    l.create({
+      trigger: t,
+      start: "top 75%",
+      onEnter: () => e.play(),
+      onEnterBack: () => e.play(),
+      onLeaveBack: () => e.reverse(),
+    }));
+}
+export { c as init, c as initBlock23TrustAnim };

@@ -1,0 +1,81 @@
+---
+/**
+ * "Callback in 1 min" dialog. Used when no CallPage widget id is configured
+ * (see src/scripts/core/callback.ts); collects a phone number with consent.
+ */
+---
+
+<div
+  class="success-popup success-popup--modal callback-modal"
+  data-callback-modal
+  hidden
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="rs-callback-title"
+>
+  <div class="success-popup__backdrop" data-callback-close></div>
+  <div class="success-popup__card callback-modal__card">
+    <button type="button" class="success-popup__close" data-callback-close aria-label="Close">
+      <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+      </svg>
+    </button>
+    <div class="success-popup__text">
+      <p class="success-popup__title" id="rs-callback-title">We call you back in 1 minute</p>
+      <p class="success-popup__body">Leave your number and one of our workplace experts will call you right away.</p>
+    </div>
+    <form class="callback-modal__form" novalidate>
+      <div class="callback-modal__field">
+        <label for="rs-callback-phone" class="sr-only">Phone number</label>
+        <input
+          type="tel"
+          id="rs-callback-phone"
+          name="phone"
+          class="callback-modal__input"
+          placeholder="Phone number"
+          autocomplete="tel"
+          required
+          pattern="[+0-9()\s./-]{8,}"
+          aria-describedby="rs-callback-phone-err"
+          data-error-required="Please enter your phone number."
+          data-error-pattern="Please enter a valid phone number."
+        />
+        <span class="field-error" id="rs-callback-phone-err" data-field-error role="alert" aria-live="polite"></span>
+      </div>
+      <div class="form-honeypot" aria-hidden="true">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" />
+      </div>
+      <div class="callback-modal__field">
+        <label class="checkbox">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            name="consent_privacy"
+            required
+            aria-describedby="rs-callback-consent-err"
+            data-error-required="Please accept the Privacy Policy."
+          />
+          <span class="checkbox__box" aria-hidden="true">
+            <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6.5l2.5 2.5 4.5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </span>
+          <span class="checkbox__label">I accept Ronnsquare's <a class="consent-link" href="/en/privacy-policy/" data-privacy-open>Privacy Policy</a>.</span>
+        </label>
+        <span class="field-error" id="rs-callback-consent-err" data-field-error role="alert" aria-live="polite"></span>
+      </div>
+      <button type="submit" class="success-popup__cta">Call me back</button>
+    </form>
+  </div>
+</div>
+
+<div class="success-popup success-popup--toast" data-form-success="callback" hidden role="status" aria-live="polite">
+  <div class="success-popup__card">
+    <span class="success-popup__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5"></circle><path d="M7 12.5l3.2 3.2L17 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </span>
+    <div class="success-popup__text">
+      <p class="success-popup__title">Thank you!</p>
+      <p class="success-popup__body">We will call you back very shortly.</p>
+    </div>
+    <span class="success-popup__progress" data-success-progress aria-hidden="true"></span>
+  </div>
+</div>

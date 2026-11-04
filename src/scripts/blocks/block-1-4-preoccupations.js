@@ -1,0 +1,57 @@
+// @ts-nocheck
+// Ported from the original Ronnsquare theme bundle (block-1-4-preoccupations-anim).
+import { d as e, S as s } from "../vendor/gsap-core.js";
+e.registerPlugin(s);
+const d = 60;
+function p(t) {
+  if (!t) return;
+  const u = window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    n = t.querySelector('[data-anim="title"]'),
+    i = [...t.querySelectorAll('[data-anim="image"]')],
+    r = [...t.querySelectorAll('[data-anim="badge"]')],
+    o = [...t.querySelectorAll('[data-anim="card-body"]')];
+  if (u) {
+    (e.set(t, { autoAlpha: 1 }),
+      e.set([n, ...r, ...o].filter(Boolean), { autoAlpha: 1, y: 0, scale: 1 }),
+      i.forEach((l) => {
+        const c = l.querySelector("[data-anim-img-inner]") || l;
+        (e.set(l, { autoAlpha: 1 }), e.set(c, { clipPath: "none", scale: 1 }));
+      }));
+    return;
+  }
+  (r.length &&
+    e.set(r, { autoAlpha: 0, scale: 0.7, transformOrigin: "center center" }),
+    o.length && e.set(o, { autoAlpha: 0, y: 24 }),
+    e.set(t, { autoAlpha: 1 }));
+  const a = e.timeline({ id: "block-1-4-preoccupations", paused: !0 });
+  (n && a.splitReveal(n, { duration: 1.2 }),
+    i.forEach((l, c) => {
+      a.revealImage(l, { duration: 0.9 }, c === 0 ? "<0.3" : "<0.2");
+    }),
+    r.length &&
+      a.to(
+        r,
+        {
+          autoAlpha: 1,
+          scale: 1,
+          duration: 0.5,
+          ease: "back.out(1.4)",
+          stagger: 0.12,
+        },
+        "<0.2",
+      ),
+    o.length &&
+      a.fadeSlideUp(
+        o,
+        { y: 20, duration: 0.7, stagger: 0.12 },
+        i.length ? "<0.3" : "<0.1",
+      ),
+    s.create({
+      trigger: t,
+      start: `top ${d}%`,
+      onEnter: () => a.play(),
+      onEnterBack: () => a.play(),
+      onLeaveBack: () => a.reverse(),
+    }));
+}
+export { p as init, p as initBlock14PreoccupationsAnim };

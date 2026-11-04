@@ -1,0 +1,105 @@
+---
+/**
+ * Base document shell shared by every route.
+ *
+ * Structure mirrors the original theme: fixed overlays + header, then the
+ * Barba wrapper/container (the only part swapped on navigation), then the
+ * footer and global dialogs. Page-level metadata (namespace, theme, initial
+ * background, breadcrumbs, language alternates) comes from src/data/pages-meta.json.
+ */
+import "../styles/ronnsquare.css";
+import "../styles/additions.css";
+import Overlays from "../components/layout/Overlays.astro";
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
+import Modals from "../components/layout/Modals.astro";
+import { getPageMeta } from "../lib/pages";
+
+interface Props {
+  page: string;
+}
+
+const meta = getPageMeta(Astro.props.page);
+const canonical = new URL(meta.path, Astro.site).href;
+const enUrl = meta.path === "/404" ? "/en/" : meta.path;
+const langUrls = JSON.stringify({ en: enUrl, fr: meta.frUrl });
+const breadcrumbs = meta.hasBreadcrumb ? meta.breadcrumbs : [];
+
+const formApi = import.meta.env.PUBLIC_FORM_API_URL || "";
+const callpageId = import.meta.env.PUBLIC_CALLPAGE_ID || "";
+const runtimeConfig = `window.rsApi=${JSON.stringify({ url: formApi })};` + (callpageId ? `window.rsCallpageConfig=${JSON.stringify({ id: callpageId, showBubble: false })};` : "");
+---
+
+<!doctype html>
+<html lang="en-US" style="background:#FFEAD4">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-visual" />
+    <script is:inline>
+      history.scrollRestoration = "manual";
+      window.scrollTo(0, 0);
+    </script>
+    <script is:inline>
+      /* Once-per-session preloader gate — runs before first paint. The big
+         wordmark preloader plays only on the first load of a session; later
+         loads get `rs-preloader-seen` and a quick loader fade instead. */
+      document.documentElement.classList.add("rs-js");
+      document.documentElement.classList.add("rs-first-load");
+      (function () {
+        try {
+          if (sessionStorage.getItem("rsPreloaderSeen")) document.documentElement.classList.add("rs-preloader-seen");
+          else sessionStorage.setItem("rsPreloaderSeen", "1");
+        } catch (e) {}
+      })();
+    </script>
+    <style is:inline>
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+    <script is:inline set:html={runtimeConfig} />
+    <title>{meta.title}</title>
+    <meta name="description" content={meta.description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={canonical} />
+    <link rel="alternate" hreflang="fr" href={meta.frUrl} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:site_name" content="Ronnsquare" />
+    {meta.ogImage && <meta property="og:image" content={meta.ogImage} />}
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="preload" href="/assets/fonts/N27-Regular-BbgSAH5W.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/Gambetta-Regular-BShmYfa4.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body class={meta.bodyClass}>
+    <Overlays />
+    <Header enUrl={enUrl} frUrl={meta.frUrl} breadcrumbs={breadcrumbs} />
+    <div data-barba="wrapper">
+      <main
+        id="main-content"
+        class="site-main"
+        role="main"
+        data-barba="container"
+        data-barba-namespace={meta.namespace}
+        data-post-id={meta.postId}
+        data-initial-bg={meta.initialBg}
+        data-nav-theme={meta.navTheme}
+        data-nav-theme-scrolled={meta.navThemeScrolled}
+        data-lang-urls={langUrls}
+        data-has-breadcrumb={meta.hasBreadcrumb ? "" : undefined}
+        data-breadcrumbs={meta.hasBreadcrumb ? JSON.stringify(meta.breadcrumbs) : undefined}
+        data-open-modal={meta.openModal}
+      >
+        <slot />
+      </main>
+    </div>
+    <Footer />
+    <Modals />
+    <script src="../scripts/main.ts"></script>
+  </body>
+</html>

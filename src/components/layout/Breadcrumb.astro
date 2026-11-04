@@ -1,0 +1,30 @@
+---
+/** Header breadcrumb (server-rendered; re-rendered client-side on Barba enter). */
+import type { Crumb } from "../../lib/types";
+
+interface Props {
+  items?: Crumb[];
+}
+const { items = [] } = Astro.props;
+---
+
+<nav class:list={["header-ronn__breadcrumb", { "header-ronn__breadcrumb--empty": !items.length }]} aria-label="Breadcrumb">
+  <div class="header-ronn__breadcrumb-track">
+    {
+      items.map((item, i) => (
+        <>
+          {i > 0 && <span class="header-ronn__breadcrumb-sep">/</span>}
+          {i === items.length - 1 ? (
+            <span class="header-ronn__breadcrumb-link" aria-current="page">
+              {item.label}
+            </span>
+          ) : (
+            <a href={item.url} class="header-ronn__breadcrumb-link header-ronn__breadcrumb-link--inactive">
+              {item.label}
+            </a>
+          )}
+        </>
+      ))
+    }
+  </div>
+</nav>

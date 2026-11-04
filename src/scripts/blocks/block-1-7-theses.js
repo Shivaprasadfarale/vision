@@ -1,0 +1,36 @@
+// @ts-nocheck
+// Ported from the original Ronnsquare theme bundle (block-1-7-theses-anim).
+import { d as r, S as l } from "../vendor/gsap-core.js";
+import { a as s } from "../core/exports.js";
+r.registerPlugin(l);
+function p(t) {
+  if (!t) return;
+  const n = window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    o = t.querySelector('[data-anim="title"]'),
+    a = t.querySelectorAll('[data-anim="stat"]');
+  if (n) {
+    r.set([o, ...a].filter(Boolean), { autoAlpha: 1, clearProps: "transform" });
+    return;
+  }
+  r.set(a, { autoAlpha: 0, y: 40 });
+  const i = () => {
+    const e = r.timeline({ paused: !0 });
+    return (
+      e.splitReveal(o, { duration: 1.2 }),
+      e.fadeSlideUp(a, { duration: 0.8, stagger: 0.15 }, "<0.4"),
+      e
+    );
+  };
+  if (t.dataset.entrance === "above-fold") s.set(t, i());
+  else {
+    const e = i();
+    l.create({
+      trigger: t,
+      start: "top 75%",
+      onEnter: () => e.play(),
+      onEnterBack: () => e.play(),
+      onLeaveBack: () => e.reverse(),
+    });
+  }
+}
+export { p as init };

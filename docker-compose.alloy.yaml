@@ -1,0 +1,20 @@
+# Alloy dev environment: runs the Astro dev server for the Ronnsquare site.
+# Uses host networking (no published ports); the site listens on :4321.
+services:
+  web:
+    image: node:22-bookworm
+    working_dir: /workspace
+    network_mode: host
+    volumes:
+      - .:/workspace
+      - web_node_modules:/workspace/node_modules
+    environment:
+      IS_ALLOY: ${IS_ALLOY:-false}
+      ASTRO_TELEMETRY_DISABLED: "1"
+      PUBLIC_FORM_API_URL: ${PUBLIC_FORM_API_URL:-}
+      PUBLIC_CALLPAGE_ID: ${PUBLIC_CALLPAGE_ID:-}
+    command: bash -lc "npm ci --no-audit --no-fund && npm run dev"
+    restart: unless-stopped
+
+volumes:
+  web_node_modules:

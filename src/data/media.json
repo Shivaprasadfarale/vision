@@ -1,0 +1,2833 @@
+{
+ "2026/05/merz_compressed_1-1-694x1024.jpg": {
+  "w": 694,
+  "h": 1024,
+  "srcset": [
+   [
+    "2026/05/merz_compressed_1-1-694x1024.jpg",
+    "694w"
+   ],
+   [
+    "2026/05/merz_compressed_1-1-203x300.jpg",
+    "203w"
+   ],
+   [
+    "2026/05/merz_compressed_1-1-768x1134.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/merz_compressed_1-1-1040x1536.jpg",
+    "1040w"
+   ],
+   [
+    "2026/05/merz_compressed_1-1.jpg",
+    "1387w"
+   ]
+  ]
+ },
+ "2026/05/merz_compressed_2-1-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/merz_compressed_2-1-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/merz_compressed_2-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/merz_compressed_2-1-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/merz_compressed_2-1-1536x1025.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/merz_compressed_2-1.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/merz_compressed_4-1-1024x681.jpg": {
+  "w": 1024,
+  "h": 681,
+  "srcset": [
+   [
+    "2026/05/merz_compressed_4-1-1024x681.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/merz_compressed_4-1-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/merz_compressed_4-1-768x510.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/merz_compressed_4-1-1536x1021.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/merz_compressed_4-1.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/CCFA-4-1024x674.jpg": {
+  "w": 1024,
+  "h": 674,
+  "srcset": [
+   [
+    "2026/06/CCFA-4-1024x674.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/CCFA-4-300x197.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/CCFA-4-768x505.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/CCFA-4-1536x1010.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/CCFA-4.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/CCFA-7-1024x684.jpg": {
+  "w": 1024,
+  "h": 684,
+  "srcset": [
+   [
+    "2026/06/CCFA-7-1024x684.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/CCFA-7-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/CCFA-7-768x513.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/CCFA-7-1536x1025.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/CCFA-7.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/CCFA-8-680x1024.jpg": {
+  "w": 680,
+  "h": 1024,
+  "srcset": [
+   [
+    "2026/06/CCFA-8-680x1024.jpg",
+    "680w"
+   ],
+   [
+    "2026/06/CCFA-8-199x300.jpg",
+    "199w"
+   ],
+   [
+    "2026/06/CCFA-8-768x1157.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/CCFA-8-1019x1536.jpg",
+    "1019w"
+   ],
+   [
+    "2026/06/CCFA-8.jpg",
+    "1359w"
+   ]
+  ]
+ },
+ "2026/06/Footer-map-1024x276.png": {
+  "w": 1024,
+  "h": 276,
+  "srcset": [
+   [
+    "2026/06/Footer-map-1024x276.png",
+    "1024w"
+   ],
+   [
+    "2026/06/Footer-map-300x81.png",
+    "300w"
+   ],
+   [
+    "2026/06/Footer-map-768x207.png",
+    "768w"
+   ],
+   [
+    "2026/06/Footer-map.png",
+    "1481w"
+   ]
+  ]
+ },
+ "2026/05/fullimage-placeholder.jpg": {
+  "w": 1200,
+  "h": 800,
+  "srcset": [
+   [
+    "2026/05/fullimage-placeholder.jpg",
+    "1200w"
+   ],
+   [
+    "2026/05/fullimage-placeholder-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/fullimage-placeholder-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/fullimage-placeholder-768x512.jpg",
+    "768w"
+   ]
+  ]
+ },
+ "2026/05/social-post-1-300x200.jpg": {
+  "w": 300,
+  "h": 200,
+  "srcset": [
+   [
+    "2026/05/social-post-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/social-post-1-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/social-post-1-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/social-post-1.jpg",
+    "1200w"
+   ]
+  ]
+ },
+ "2026/05/social-post-3-300x200.jpg": {
+  "w": 300,
+  "h": 200,
+  "srcset": [
+   [
+    "2026/05/social-post-3-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/social-post-3-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/social-post-3-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/social-post-3-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/social-post-3-2048x1366.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/social-post-2-201x300.jpg": {
+  "w": 201,
+  "h": 300,
+  "srcset": [
+   [
+    "2026/05/social-post-2-201x300.jpg",
+    "201w"
+   ],
+   [
+    "2026/05/social-post-2-685x1024.jpg",
+    "685w"
+   ],
+   [
+    "2026/05/social-post-2-768x1148.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/social-post-2.jpg",
+    "900w"
+   ]
+  ]
+ },
+ "2026/06/1.-PHOTOS-EQUIPES-SHOWROOM1_200kb-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/06/2.-PHOTOS-EQUIPES-SHOWROOM1_200kb-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/06/3.-PHOTOS-EQUIPES-SHOWROOM1_200kb-683x1024.jpg": {
+  "srcset": []
+ },
+ "2026/06/4.-PHOTOS-EQUIPES-SHOWROOM1_200kb-683x1024.jpg": {
+  "srcset": []
+ },
+ "2026/06/5.-PHOTOS-EQUIPES-SHOWROOM1_200kb-683x1024.jpg": {
+  "srcset": []
+ },
+ "2026/06/6.-PHOTOS-EQUIPES-SHOWROOM1_200kb-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/06/7.-PHOTOS-EQUIPES-SHOWROOM1_200kb-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/06/8.-PHOTOS-EQUIPES-SHOWROOM1_200kb-683x1024.jpg": {
+  "srcset": []
+ },
+ "2026/06/9.-PHOTOS-EQUIPES-SHOWROOM_200kb-683x1024.jpg": {
+  "srcset": []
+ },
+ "2026/06/10.-PHOTOS-EQUIPES-SHOWROOM1_200kb-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/06/Gilles_Roncoroni_200KB.jpg": {
+  "srcset": []
+ },
+ "2026/05/rse-bg.jpg": {
+  "srcset": []
+ },
+ "2026/05/6.-CHIFFRES-CLES-1024x687.jpg": {
+  "w": 1024,
+  "h": 687,
+  "srcset": [
+   [
+    "2026/05/6.-CHIFFRES-CLES-1024x687.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/6.-CHIFFRES-CLES-300x201.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/6.-CHIFFRES-CLES-768x515.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/6.-CHIFFRES-CLES-1536x1030.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/6.-CHIFFRES-CLES.jpg",
+    "2047w"
+   ]
+  ]
+ },
+ "2026/05/GROUPE-PHARMA-4_200kb-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/GROUPE-PHARMA-4_200kb-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-4_200kb-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-4_200kb-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-4_200kb-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-4_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/epiceum_compressed_3-1-1024x694.jpg": {
+  "w": 1024,
+  "h": 694,
+  "srcset": [
+   [
+    "2026/05/epiceum_compressed_3-1-1024x694.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/epiceum_compressed_3-1-300x203.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/epiceum_compressed_3-1-768x520.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/epiceum_compressed_3-1-1536x1040.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/epiceum_compressed_3-1.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Niterra-1-retouche_200kb-1024x694.jpg": {
+  "w": 1024,
+  "h": 694,
+  "srcset": [
+   [
+    "2026/05/Niterra-1-retouche_200kb-1024x694.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Niterra-1-retouche_200kb-300x203.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Niterra-1-retouche_200kb-768x520.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Niterra-1-retouche_200kb-1536x1040.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Niterra-1-retouche_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/Arneg-11_200KB-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/06/Arneg-11_200KB-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/Arneg-11_200KB-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/Arneg-11_200KB-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/Arneg-11_200KB-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/Arneg-11_200KB.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/Socoda-_62B5280-retouchee_under200KB-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/06/Socoda-_62B5280-retouchee_under200KB-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/Socoda-_62B5280-retouchee_under200KB-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/Socoda-_62B5280-retouchee_under200KB-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/Socoda-_62B5280-retouchee_under200KB-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/Socoda-_62B5280-retouchee_under200KB.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Temoignage_Rodl_200kb-1-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/Temoignage_Rodl_200kb-1-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Temoignage_Rodl_200kb-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Temoignage_Rodl_200kb-1-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Temoignage_Rodl_200kb-1-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Temoignage_Rodl_200kb-1.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Persona-1.png": {
+  "srcset": []
+ },
+ "2026/05/Persona-2.png": {
+  "srcset": []
+ },
+ "2026/05/Persona-3.png": {
+  "srcset": []
+ },
+ "2026/05/Persona-4.png": {
+  "srcset": []
+ },
+ "2026/05/Persona-5.png": {
+  "srcset": []
+ },
+ "2026/05/Persona-6.png": {
+  "srcset": []
+ },
+ "2026/05/Persona-7.png": {
+  "srcset": []
+ },
+ "2026/05/Persona-8.png": {
+  "srcset": []
+ },
+ "2026/05/Persona-9.png": {
+  "srcset": []
+ },
+ "2026/05/Person.png": {
+  "srcset": []
+ },
+ "2026/06/Map_new_under200KB.jpg": {
+  "srcset": []
+ },
+ "2026/05/Temoignage_Naarea_2_200kb-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/Temoignage_Naarea_2_200kb-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Temoignage_Naarea_2_200kb-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Temoignage_Naarea_2_200kb-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Temoignage_Naarea_2_200kb-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Temoignage_Naarea_2_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Temoignage_Niterra_200kb-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/Temoignage_Niterra_200kb-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Temoignage_Niterra_200kb-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Temoignage_Niterra_200kb-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Temoignage_Niterra_200kb-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Temoignage_Niterra_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Temoignage_Merz_Aesthetics_1_200kb-1024x677.jpg": {
+  "w": 1024,
+  "h": 677,
+  "srcset": [
+   [
+    "2026/05/Temoignage_Merz_Aesthetics_1_200kb-1024x677.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Temoignage_Merz_Aesthetics_1_200kb-300x198.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Temoignage_Merz_Aesthetics_1_200kb-768x508.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Temoignage_Merz_Aesthetics_1_200kb-1536x1016.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Temoignage_Merz_Aesthetics_1_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Temoignage_IM_Projet_200kb-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/Temoignage_IM_Projet_200kb-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Temoignage_IM_Projet_200kb-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Temoignage_IM_Projet_200kb-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Temoignage_IM_Projet_200kb-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Temoignage_IM_Projet_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Jean-Marc-Magnet-Naarea-150x150.png": {
+  "w": 150,
+  "h": 150,
+  "srcset": [
+   [
+    "2026/05/Jean-Marc-Magnet-Naarea-150x150.png",
+    "150w"
+   ],
+   [
+    "2026/05/Jean-Marc-Magnet-Naarea.png",
+    "200w"
+   ]
+  ]
+ },
+ "2026/05/Maxime_Vigouroux_Niterra_200kb-150x150.png": {
+  "w": 150,
+  "h": 150,
+  "srcset": [
+   [
+    "2026/05/Maxime_Vigouroux_Niterra_200kb-150x150.png",
+    "150w"
+   ],
+   [
+    "2026/05/Maxime_Vigouroux_Niterra_200kb.png",
+    "200w"
+   ]
+  ]
+ },
+ "2026/05/Nicolas_de_La_Hosseraye_Merz_Aesthetics_200kb-150x150.png": {
+  "w": 150,
+  "h": 150,
+  "srcset": [
+   [
+    "2026/05/Nicolas_de_La_Hosseraye_Merz_Aesthetics_200kb-150x150.png",
+    "150w"
+   ],
+   [
+    "2026/05/Nicolas_de_La_Hosseraye_Merz_Aesthetics_200kb.png",
+    "200w"
+   ]
+  ]
+ },
+ "2026/05/Philippe_Regis_IM_Projet_200kb-150x150.png": {
+  "w": 150,
+  "h": 150,
+  "srcset": [
+   [
+    "2026/05/Philippe_Regis_IM_Projet_200kb-150x150.png",
+    "150w"
+   ],
+   [
+    "2026/05/Philippe_Regis_IM_Projet_200kb.png",
+    "200w"
+   ]
+  ]
+ },
+ "2026/05/social-post-1-1-300x200.jpg": {
+  "w": 300,
+  "h": 200,
+  "srcset": [
+   [
+    "2026/05/social-post-1-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/social-post-1-1-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/social-post-1-1-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/social-post-1-1.jpg",
+    "1200w"
+   ]
+  ]
+ },
+ "2026/05/social-post-3-1-300x200.jpg": {
+  "w": 300,
+  "h": 200,
+  "srcset": [
+   [
+    "2026/05/social-post-3-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/social-post-3-1-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/social-post-3-1-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/social-post-3-1-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/social-post-3-1-2048x1366.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/social-post-2-1-201x300.jpg": {
+  "w": 201,
+  "h": 300,
+  "srcset": [
+   [
+    "2026/05/social-post-2-1-201x300.jpg",
+    "201w"
+   ],
+   [
+    "2026/05/social-post-2-1-685x1024.jpg",
+    "685w"
+   ],
+   [
+    "2026/05/social-post-2-1-768x1148.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/social-post-2-1.jpg",
+    "900w"
+   ]
+  ]
+ },
+ "2026/06/3.-CONSEIL-STRATEGIQUE_200kb-1024x668.jpg": {
+  "w": 1024,
+  "h": 668,
+  "srcset": [
+   [
+    "2026/06/3.-CONSEIL-STRATEGIQUE_200kb-1024x668.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/3.-CONSEIL-STRATEGIQUE_200kb-300x196.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/3.-CONSEIL-STRATEGIQUE_200kb-768x501.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/3.-CONSEIL-STRATEGIQUE_200kb-1536x1002.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/3.-CONSEIL-STRATEGIQUE_200kb.jpg",
+    "2047w"
+   ]
+  ]
+ },
+ "2026/06/4.-ARCHITECTURE-DESIGN_200kb-1024x673.jpg": {
+  "w": 1024,
+  "h": 673,
+  "srcset": [
+   [
+    "2026/06/4.-ARCHITECTURE-DESIGN_200kb-1024x673.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/4.-ARCHITECTURE-DESIGN_200kb-300x197.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/4.-ARCHITECTURE-DESIGN_200kb-768x505.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/4.-ARCHITECTURE-DESIGN_200kb-1536x1010.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/4.-ARCHITECTURE-DESIGN_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/5.-TECNIQUE-REALISATION_200kb-1024x680.jpg": {
+  "w": 1024,
+  "h": 680,
+  "srcset": [
+   [
+    "2026/06/5.-TECNIQUE-REALISATION_200kb-1024x680.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/5.-TECNIQUE-REALISATION_200kb-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/5.-TECNIQUE-REALISATION_200kb-768x510.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/5.-TECNIQUE-REALISATION_200kb-1536x1019.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/5.-TECNIQUE-REALISATION_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/6.-DURABILITE-ECOLOGIE_200kb-1024x680.jpg": {
+  "w": 1024,
+  "h": 680,
+  "srcset": [
+   [
+    "2026/06/6.-DURABILITE-ECOLOGIE_200kb-1024x680.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/6.-DURABILITE-ECOLOGIE_200kb-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/6.-DURABILITE-ECOLOGIE_200kb-768x510.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/6.-DURABILITE-ECOLOGIE_200kb-1536x1020.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/6.-DURABILITE-ECOLOGIE_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Temoignage_Horus_Pharma_2_200KB-1024x768.jpg": {
+  "w": 1024,
+  "h": 768,
+  "srcset": [
+   [
+    "2026/05/Temoignage_Horus_Pharma_2_200KB-1024x768.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Temoignage_Horus_Pharma_2_200KB-300x225.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Temoignage_Horus_Pharma_2_200KB-768x576.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Temoignage_Horus_Pharma_2_200KB-1536x1152.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Temoignage_Horus_Pharma_2_200KB.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Megane_Jeanson_Horus_Pharma_200kb-150x150.png": {
+  "w": 150,
+  "h": 150,
+  "srcset": [
+   [
+    "2026/05/Megane_Jeanson_Horus_Pharma_200kb-150x150.png",
+    "150w"
+   ],
+   [
+    "2026/05/Megane_Jeanson_Horus_Pharma_200kb.png",
+    "200w"
+   ]
+  ]
+ },
+ "2026/05/14.-CALL-TO-ACTION-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/14.-CALL-TO-ACTION-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/14.-CALL-TO-ACTION-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/14.-CALL-TO-ACTION-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/14.-CALL-TO-ACTION-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/14.-CALL-TO-ACTION.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/4.-ARCHITECTURE-DESIGN_200kb.jpg": {
+  "w": 2048,
+  "h": 1346,
+  "srcset": [
+   [
+    "2026/06/4.-ARCHITECTURE-DESIGN_200kb.jpg",
+    "2048w"
+   ],
+   [
+    "2026/06/4.-ARCHITECTURE-DESIGN_200kb-300x197.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/4.-ARCHITECTURE-DESIGN_200kb-1024x673.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/4.-ARCHITECTURE-DESIGN_200kb-768x505.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/4.-ARCHITECTURE-DESIGN_200kb-1536x1010.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/06/semicircle-down.svg": {
+  "srcset": []
+ },
+ "2026/06/Circle.svg": {
+  "srcset": []
+ },
+ "2026/06/rectangle.svg": {
+  "srcset": []
+ },
+ "2026/06/Rhomb.svg": {
+  "srcset": []
+ },
+ "2026/06/semicircle-up.svg": {
+  "srcset": []
+ },
+ "2026/06/triangle-down.svg": {
+  "srcset": []
+ },
+ "2026/06/triangle-up.svg": {
+  "srcset": []
+ },
+ "2026/05/abylsen_compressed_3-1-1024x684.jpg": {
+  "w": 1024,
+  "h": 684,
+  "srcset": [
+   [
+    "2026/05/abylsen_compressed_3-1-1024x684.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/abylsen_compressed_3-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/abylsen_compressed_3-1-768x513.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/abylsen_compressed_3-1-1536x1026.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/abylsen_compressed_3-1.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/abylsen_compressed_1-1-1024x678.jpg": {
+  "w": 1024,
+  "h": 678,
+  "srcset": [
+   [
+    "2026/05/abylsen_compressed_1-1-1024x678.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/abylsen_compressed_1-1-300x198.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/abylsen_compressed_1-1-768x508.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/abylsen_compressed_1-1-1536x1016.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/abylsen_compressed_1-1.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/epiceum_compressed_7-1-1024x684.jpg": {
+  "w": 1024,
+  "h": 684,
+  "srcset": [
+   [
+    "2026/05/epiceum_compressed_7-1-1024x684.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/epiceum_compressed_7-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/epiceum_compressed_7-1-768x513.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/epiceum_compressed_7-1-1536x1025.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/epiceum_compressed_7-1.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/epiceum_compressed_6-1-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/epiceum_compressed_6-1-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/epiceum_compressed_6-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/epiceum_compressed_6-1-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/epiceum_compressed_6-1-1536x1025.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/epiceum_compressed_6-1.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Geoffrey-Julien-IM-Projet-150x150.png": {
+  "w": 150,
+  "h": 150,
+  "srcset": [
+   [
+    "2026/05/Geoffrey-Julien-IM-Projet-150x150.png",
+    "150w"
+   ],
+   [
+    "2026/05/Geoffrey-Julien-IM-Projet.png",
+    "200w"
+   ]
+  ]
+ },
+ "2026/05/Nicola_Lohrey_Rodl_Partner_200kb-150x150.png": {
+  "w": 150,
+  "h": 150,
+  "srcset": [
+   [
+    "2026/05/Nicola_Lohrey_Rodl_Partner_200kb-150x150.png",
+    "150w"
+   ],
+   [
+    "2026/05/Nicola_Lohrey_Rodl_Partner_200kb.png",
+    "200w"
+   ]
+  ]
+ },
+ "2026/06/3.-CONSEIL-STRATEGIQUE_200kb.jpg": {
+  "w": 2047,
+  "h": 1336,
+  "srcset": [
+   [
+    "2026/06/3.-CONSEIL-STRATEGIQUE_200kb.jpg",
+    "2047w"
+   ],
+   [
+    "2026/06/3.-CONSEIL-STRATEGIQUE_200kb-300x196.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/3.-CONSEIL-STRATEGIQUE_200kb-1024x668.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/3.-CONSEIL-STRATEGIQUE_200kb-768x501.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/3.-CONSEIL-STRATEGIQUE_200kb-1536x1002.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/06/5.-TECNIQUE-REALISATION_200kb.jpg": {
+  "w": 2048,
+  "h": 1359,
+  "srcset": [
+   [
+    "2026/06/5.-TECNIQUE-REALISATION_200kb.jpg",
+    "2048w"
+   ],
+   [
+    "2026/06/5.-TECNIQUE-REALISATION_200kb-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/5.-TECNIQUE-REALISATION_200kb-1024x680.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/5.-TECNIQUE-REALISATION_200kb-768x510.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/5.-TECNIQUE-REALISATION_200kb-1536x1019.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/06/6.-DURABILITE-ECOLOGIE_200kb.jpg": {
+  "w": 2048,
+  "h": 1360,
+  "srcset": [
+   [
+    "2026/06/6.-DURABILITE-ECOLOGIE_200kb.jpg",
+    "2048w"
+   ],
+   [
+    "2026/06/6.-DURABILITE-ECOLOGIE_200kb-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/6.-DURABILITE-ECOLOGIE_200kb-1024x680.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/6.-DURABILITE-ECOLOGIE_200kb-768x510.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/6.-DURABILITE-ECOLOGIE_200kb-1536x1020.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/cta-bg-1024x678.jpg": {
+  "w": 1024,
+  "h": 678,
+  "srcset": [
+   [
+    "2026/05/cta-bg-1024x678.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/cta-bg-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/cta-bg-768x508.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/cta-bg.jpg",
+    "1361w"
+   ]
+  ]
+ },
+ "2026/06/Arneg-21_200KB-683x1024.jpg": {
+  "w": 683,
+  "h": 1024,
+  "srcset": [
+   [
+    "2026/06/Arneg-21_200KB-683x1024.jpg",
+    "683w"
+   ],
+   [
+    "2026/06/Arneg-21_200KB-200x300.jpg",
+    "200w"
+   ],
+   [
+    "2026/06/Arneg-21_200KB-768x1152.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/Arneg-21_200KB-1024x1536.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/Arneg-21_200KB.jpg",
+    "1365w"
+   ]
+  ]
+ },
+ "2026/06/Arneg-22_under200KB-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/06/Arneg-22_under200KB-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/Arneg-22_under200KB-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/Arneg-22_under200KB-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/Arneg-22_under200KB-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/Arneg-22_under200KB.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/Socoda-_62B5305-retouchee_under200KB-1024x678.jpg": {
+  "w": 1024,
+  "h": 678,
+  "srcset": [
+   [
+    "2026/06/Socoda-_62B5305-retouchee_under200KB-1024x678.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/Socoda-_62B5305-retouchee_under200KB-300x198.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/Socoda-_62B5305-retouchee_under200KB-768x508.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/Socoda-_62B5305-retouchee_under200KB-1536x1016.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/Socoda-_62B5305-retouchee_under200KB.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/Socoda-_62B5295-retouchee_under200KB-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/06/Socoda-_62B5295-retouchee_under200KB-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/Socoda-_62B5295-retouchee_under200KB-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/Socoda-_62B5295-retouchee_under200KB-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/Socoda-_62B5295-retouchee_under200KB-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/06/Socoda-_62B5295-retouchee_under200KB.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Temoignage_Groupe_Pharma_3_200kb-1024x690.jpg": {
+  "w": 1024,
+  "h": 690,
+  "srcset": [
+   [
+    "2026/05/Temoignage_Groupe_Pharma_3_200kb-1024x690.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Temoignage_Groupe_Pharma_3_200kb-300x202.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Temoignage_Groupe_Pharma_3_200kb-768x518.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Temoignage_Groupe_Pharma_3_200kb-1536x1035.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Temoignage_Groupe_Pharma_3_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Office_manager_Groupe_Pharmaceutique_200kb-150x150.png": {
+  "w": 150,
+  "h": 150,
+  "srcset": [
+   [
+    "2026/05/Office_manager_Groupe_Pharmaceutique_200kb-150x150.png",
+    "150w"
+   ],
+   [
+    "2026/05/Office_manager_Groupe_Pharmaceutique_200kb.png",
+    "200w"
+   ]
+  ]
+ },
+ "2026/05/Temoignage_Vanderlande_200kb-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/Temoignage_Vanderlande_200kb-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Temoignage_Vanderlande_200kb-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Temoignage_Vanderlande_200kb-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Temoignage_Vanderlande_200kb-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Temoignage_Vanderlande_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Christophe_Jallon_Vanderlande-150x150.png": {
+  "w": 150,
+  "h": 150,
+  "srcset": [
+   [
+    "2026/05/Christophe_Jallon_Vanderlande-150x150.png",
+    "150w"
+   ],
+   [
+    "2026/05/Christophe_Jallon_Vanderlande.png",
+    "200w"
+   ]
+  ]
+ },
+ "2026/05/Niterra-6-retouche_200kb-1024x680.jpg": {
+  "w": 1024,
+  "h": 680,
+  "srcset": [
+   [
+    "2026/05/Niterra-6-retouche_200kb-1024x680.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Niterra-6-retouche_200kb-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Niterra-6-retouche_200kb-768x510.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Niterra-6-retouche_200kb-1536x1020.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Niterra-6-retouche_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Niterra-7-retouche_200kb-1024x671.jpg": {
+  "w": 1024,
+  "h": 671,
+  "srcset": [
+   [
+    "2026/05/Niterra-7-retouche_200kb-1024x671.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Niterra-7-retouche_200kb-300x196.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Niterra-7-retouche_200kb-768x503.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Niterra-7-retouche_200kb-1536x1006.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Niterra-7-retouche_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/10/Entree-batiment-blanc-Paris.jpg": {
+  "w": 4032,
+  "h": 6048,
+  "srcset": [
+   [
+    "2026/10/Entree-batiment-blanc-Paris.jpg",
+    "4032w"
+   ],
+   [
+    "2026/10/Entree-batiment-blanc-Paris-200x300.jpg",
+    "200w"
+   ],
+   [
+    "2026/10/Entree-batiment-blanc-Paris-683x1024.jpg",
+    "683w"
+   ],
+   [
+    "2026/10/Entree-batiment-blanc-Paris-768x1152.jpg",
+    "768w"
+   ],
+   [
+    "2026/10/Entree-batiment-blanc-Paris-1024x1536.jpg",
+    "1024w"
+   ],
+   [
+    "2026/10/Entree-batiment-blanc-Paris-1365x2048.jpg",
+    "1365w"
+   ]
+  ]
+ },
+ "2026/05/GROUPE-PHARMA-11_200kb-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/GROUPE-PHARMA-11_200kb-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-11_200kb-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-11_200kb-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-11_200kb-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-11_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/GROUPE-PHARMA-9_200kb-1024x690.jpg": {
+  "w": 1024,
+  "h": 690,
+  "srcset": [
+   [
+    "2026/05/GROUPE-PHARMA-9_200kb-1024x690.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-9_200kb-300x202.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-9_200kb-768x518.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-9_200kb-1536x1035.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-9_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/1.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/06/2.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/06/3.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/06/4.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/05/hero-photo.png": {
+  "w": 1800,
+  "h": 900,
+  "srcset": [
+   [
+    "2026/05/hero-photo.png",
+    "1800w"
+   ],
+   [
+    "2026/05/hero-photo-300x150.png",
+    "300w"
+   ],
+   [
+    "2026/05/hero-photo-1024x512.png",
+    "1024w"
+   ],
+   [
+    "2026/05/hero-photo-768x384.png",
+    "768w"
+   ],
+   [
+    "2026/05/hero-photo-1536x768.png",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/06/card-b-3.jpg": {
+  "w": 1348,
+  "h": 900,
+  "srcset": [
+   [
+    "2026/06/card-b-3.jpg",
+    "1348w"
+   ],
+   [
+    "2026/06/card-b-3-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/card-b-3-1024x684.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/card-b-3-768x513.jpg",
+    "768w"
+   ]
+  ]
+ },
+ "2026/05/about-2-1536x2048.jpg": {
+  "w": 1536,
+  "h": 2048,
+  "srcset": [
+   [
+    "2026/05/about-2-1536x2048.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/about-2-225x300.jpg",
+    "225w"
+   ],
+   [
+    "2026/05/about-2-768x1024.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/about-2-1152x1536.jpg",
+    "1152w"
+   ],
+   [
+    "2026/05/about-2.jpg",
+    "2000w"
+   ]
+  ]
+ },
+ "2026/06/A-la-pointe-du-marche.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/06/Des-specialistes-dans.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/06/35-ans-experience-1.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/06/Un-process-eprouve.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/05/Temoignage_Rodl_200kb-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/Temoignage_Rodl_200kb-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Temoignage_Rodl_200kb-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Temoignage_Rodl_200kb-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Temoignage_Rodl_200kb-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/Temoignage_Rodl_200kb.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/07/Bureau.jpg": {
+  "w": 1357,
+  "h": 902,
+  "srcset": [
+   [
+    "2026/07/Bureau.jpg",
+    "1357w"
+   ],
+   [
+    "2026/07/Bureau-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/07/Bureau-1024x681.jpg",
+    "1024w"
+   ],
+   [
+    "2026/07/Bureau-768x510.jpg",
+    "768w"
+   ]
+  ]
+ },
+ "2026/05/14.-CALL-TO-ACTION.jpg": {
+  "w": 2048,
+  "h": 1365,
+  "srcset": [
+   [
+    "2026/05/14.-CALL-TO-ACTION.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/14.-CALL-TO-ACTION-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/14.-CALL-TO-ACTION-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/14.-CALL-TO-ACTION-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/14.-CALL-TO-ACTION-1536x1024.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/06/Un-interlocuteur.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/07/AdobeStock_332667448_200kb.jpg": {
+  "w": 2048,
+  "h": 1366,
+  "srcset": [
+   [
+    "2026/07/AdobeStock_332667448_200kb.jpg",
+    "2048w"
+   ],
+   [
+    "2026/07/AdobeStock_332667448_200kb-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/07/AdobeStock_332667448_200kb-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/07/AdobeStock_332667448_200kb-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/07/AdobeStock_332667448_200kb-1536x1025.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/07/Batiments-1.jpg": {
+  "w": 2048,
+  "h": 1366,
+  "srcset": [
+   [
+    "2026/07/Batiments-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/07/Batiments-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/07/Batiments-1-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/07/Batiments-1-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/07/Batiments-1-1536x1025.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/06/Independant-1.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/06/Discretion-absolue.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/06/35-ans-experience.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/06/Conseil-pur-1.svg": {
+  "w": 1,
+  "h": 1,
+  "srcset": []
+ },
+ "2026/07/Batiments-1-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/07/Batiments-1-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/07/Batiments-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/07/Batiments-1-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/07/Batiments-1-1536x1025.jpg",
+    "1536w"
+   ],
+   [
+    "2026/07/Batiments-1.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/06/ADP-Group_RodlPartner-1_under200KB-683x1024.jpg": {
+  "w": 683,
+  "h": 1024,
+  "srcset": [
+   [
+    "2026/06/ADP-Group_RodlPartner-1_under200KB-683x1024.jpg",
+    "683w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-1_under200KB-200x300.jpg",
+    "200w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-1_under200KB-768x1152.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-1_under200KB-1024x1536.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-1_under200KB.jpg",
+    "1365w"
+   ]
+  ]
+ },
+ "2026/06/ADP-Group_RodlPartner-3_under200KB-683x1024.jpg": {
+  "w": 683,
+  "h": 1024,
+  "srcset": [
+   [
+    "2026/06/ADP-Group_RodlPartner-3_under200KB-683x1024.jpg",
+    "683w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-3_under200KB-200x300.jpg",
+    "200w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-3_under200KB-768x1152.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-3_under200KB-1024x1536.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-3_under200KB.jpg",
+    "1365w"
+   ]
+  ]
+ },
+ "2026/05/abylsen_compressed_7-1024x683.jpg": {
+  "w": 1024,
+  "h": 683,
+  "srcset": [
+   [
+    "2026/05/abylsen_compressed_7-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/abylsen_compressed_7-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/abylsen_compressed_7-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/abylsen_compressed_7-1536x1024.jpg",
+    "1536w"
+   ],
+   [
+    "2026/05/abylsen_compressed_7.jpg",
+    "2048w"
+   ]
+  ]
+ },
+ "2026/05/Olivier-Rustat-Abylsen-150x150.png": {
+  "w": 150,
+  "h": 150,
+  "srcset": [
+   [
+    "2026/05/Olivier-Rustat-Abylsen-150x150.png",
+    "150w"
+   ],
+   [
+    "2026/05/Olivier-Rustat-Abylsen.png",
+    "200w"
+   ]
+  ]
+ },
+ "2026/05/abylsen_compressed_5-1-1024x687.jpg": {
+  "srcset": []
+ },
+ "2026/05/abylsen_compressed_2-1-685x1024.jpg": {
+  "srcset": []
+ },
+ "2026/05/abylsen_compressed_8-1024x687.jpg": {
+  "srcset": []
+ },
+ "2026/05/abylsen_compressed_6-1-1024x686.jpg": {
+  "srcset": []
+ },
+ "2026/05/abylsen_compressed_8.jpg": {
+  "srcset": []
+ },
+ "2026/05/abylsen_compressed_3-1.jpg": {
+  "w": 2048,
+  "h": 1368,
+  "srcset": [
+   [
+    "2026/05/abylsen_compressed_3-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/abylsen_compressed_3-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/abylsen_compressed_3-1-1024x684.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/abylsen_compressed_3-1-768x513.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/abylsen_compressed_3-1-1536x1026.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/abylsen_compressed_1-1.jpg": {
+  "w": 2048,
+  "h": 1355,
+  "srcset": [
+   [
+    "2026/05/abylsen_compressed_1-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/abylsen_compressed_1-1-300x198.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/abylsen_compressed_1-1-1024x678.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/abylsen_compressed_1-1-768x508.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/abylsen_compressed_1-1-1536x1016.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/abylsen_compressed_2-1.jpg": {
+  "w": 1370,
+  "h": 2048,
+  "srcset": [
+   [
+    "2026/05/abylsen_compressed_2-1.jpg",
+    "1370w"
+   ],
+   [
+    "2026/05/abylsen_compressed_2-1-201x300.jpg",
+    "201w"
+   ],
+   [
+    "2026/05/abylsen_compressed_2-1-685x1024.jpg",
+    "685w"
+   ],
+   [
+    "2026/05/abylsen_compressed_2-1-768x1148.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/abylsen_compressed_2-1-1028x1536.jpg",
+    "1028w"
+   ]
+  ]
+ },
+ "2026/05/abylsen_compressed_5-1.jpg": {
+  "w": 2048,
+  "h": 1374,
+  "srcset": [
+   [
+    "2026/05/abylsen_compressed_5-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/abylsen_compressed_5-1-300x201.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/abylsen_compressed_5-1-1024x687.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/abylsen_compressed_5-1-768x515.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/abylsen_compressed_5-1-1536x1031.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/abylsen_compressed_7.jpg": {
+  "srcset": []
+ },
+ "2026/05/Olivier-Rustat-Abylsen.png": {
+  "w": 60,
+  "h": 60,
+  "srcset": []
+ },
+ "2026/06/Arneg-4_200KB-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/06/Arneg-18_under200KB-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/06/Arneg-19_200KB-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/06/Arneg-20_200KB.jpg": {
+  "srcset": []
+ },
+ "2026/06/Arneg-21_200KB.jpg": {
+  "w": 1365,
+  "h": 2048,
+  "srcset": [
+   [
+    "2026/06/Arneg-21_200KB.jpg",
+    "1365w"
+   ],
+   [
+    "2026/06/Arneg-21_200KB-200x300.jpg",
+    "200w"
+   ],
+   [
+    "2026/06/Arneg-21_200KB-683x1024.jpg",
+    "683w"
+   ],
+   [
+    "2026/06/Arneg-21_200KB-768x1152.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/Arneg-21_200KB-1024x1536.jpg",
+    "1024w"
+   ]
+  ]
+ },
+ "2026/06/Arneg-22_under200KB.jpg": {
+  "w": 2048,
+  "h": 1365,
+  "srcset": [
+   [
+    "2026/06/Arneg-22_under200KB.jpg",
+    "2048w"
+   ],
+   [
+    "2026/06/Arneg-22_under200KB-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/Arneg-22_under200KB-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/Arneg-22_under200KB-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/Arneg-22_under200KB-1536x1024.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/06/Arneg-18_under200KB.jpg": {
+  "srcset": []
+ },
+ "2026/06/CCFA-1-1024x684.jpg": {
+  "srcset": []
+ },
+ "2026/06/CCFA-2-1024x674.jpg": {
+  "srcset": []
+ },
+ "2026/06/CCFA-3-1024x676.jpg": {
+  "srcset": []
+ },
+ "2026/06/CCFA-5-1024x674.jpg": {
+  "srcset": []
+ },
+ "2026/06/CCFA-6-1024x671.jpg": {
+  "srcset": []
+ },
+ "2026/06/CCFA-5.jpg": {
+  "srcset": []
+ },
+ "2026/06/CCFA-7.jpg": {
+  "w": 2048,
+  "h": 1367,
+  "srcset": [
+   [
+    "2026/06/CCFA-7.jpg",
+    "2048w"
+   ],
+   [
+    "2026/06/CCFA-7-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/CCFA-7-1024x684.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/CCFA-7-768x513.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/CCFA-7-1536x1025.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/06/CCFA-8.jpg": {
+  "w": 1359,
+  "h": 2048,
+  "srcset": [
+   [
+    "2026/06/CCFA-8.jpg",
+    "1359w"
+   ],
+   [
+    "2026/06/CCFA-8-199x300.jpg",
+    "199w"
+   ],
+   [
+    "2026/06/CCFA-8-680x1024.jpg",
+    "680w"
+   ],
+   [
+    "2026/06/CCFA-8-768x1157.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/CCFA-8-1019x1536.jpg",
+    "1019w"
+   ]
+  ]
+ },
+ "2026/06/CCFA-9.jpg": {
+  "w": 1383,
+  "h": 2048,
+  "srcset": [
+   [
+    "2026/06/CCFA-9.jpg",
+    "1383w"
+   ],
+   [
+    "2026/06/CCFA-9-203x300.jpg",
+    "203w"
+   ],
+   [
+    "2026/06/CCFA-9-692x1024.jpg",
+    "692w"
+   ],
+   [
+    "2026/06/CCFA-9-768x1137.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/CCFA-9-1037x1536.jpg",
+    "1037w"
+   ]
+  ]
+ },
+ "2026/06/CCFA-10.jpg": {
+  "w": 2048,
+  "h": 1361,
+  "srcset": [
+   [
+    "2026/06/CCFA-10.jpg",
+    "2048w"
+   ],
+   [
+    "2026/06/CCFA-10-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/CCFA-10-1024x681.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/CCFA-10-768x510.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/CCFA-10-1536x1021.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/epiceum_compressed_1-1-1024x688.jpg": {
+  "srcset": []
+ },
+ "2026/05/epiceum_compressed_2-1-1024x692.jpg": {
+  "srcset": []
+ },
+ "2026/05/epiceum_compressed_4-1-1024x665.jpg": {
+  "srcset": []
+ },
+ "2026/05/epiceum_compressed_5-1-1024x661.jpg": {
+  "srcset": []
+ },
+ "2026/05/epiceum_compressed_4-1.jpg": {
+  "srcset": []
+ },
+ "2026/05/epiceum_compressed_7-1.jpg": {
+  "w": 2048,
+  "h": 1367,
+  "srcset": [
+   [
+    "2026/05/epiceum_compressed_7-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/epiceum_compressed_7-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/epiceum_compressed_7-1-1024x684.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/epiceum_compressed_7-1-768x513.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/epiceum_compressed_7-1-1536x1025.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/epiceum_compressed_6-1.jpg": {
+  "w": 2048,
+  "h": 1366,
+  "srcset": [
+   [
+    "2026/05/epiceum_compressed_6-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/epiceum_compressed_6-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/epiceum_compressed_6-1-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/epiceum_compressed_6-1-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/epiceum_compressed_6-1-1536x1025.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/epiceum_compressed_5-1.jpg": {
+  "w": 2048,
+  "h": 1322,
+  "srcset": [
+   [
+    "2026/05/epiceum_compressed_5-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/epiceum_compressed_5-1-300x194.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/epiceum_compressed_5-1-1024x661.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/epiceum_compressed_5-1-768x496.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/epiceum_compressed_5-1-1536x992.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/epiceum_compressed_3-1.jpg": {
+  "w": 2048,
+  "h": 1387,
+  "srcset": [
+   [
+    "2026/05/epiceum_compressed_3-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/epiceum_compressed_3-1-300x203.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/epiceum_compressed_3-1-1024x694.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/epiceum_compressed_3-1-768x520.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/epiceum_compressed_3-1-1536x1040.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/epiceum_compressed_1-1.jpg": {
+  "srcset": []
+ },
+ "2026/05/GROUPE-PHARMA-2_200kb-1024x687.jpg": {
+  "srcset": []
+ },
+ "2026/05/GROUPE-PHARMA-3_200kb-685x1024.jpg": {
+  "srcset": []
+ },
+ "2026/05/GROUPE-PHARMA-6_200kb-1024x684.jpg": {
+  "srcset": []
+ },
+ "2026/05/GROUPE-PHARMA-1_200kb.jpg": {
+  "w": 2048,
+  "h": 1355,
+  "srcset": [
+   [
+    "2026/05/GROUPE-PHARMA-1_200kb.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-1_200kb-300x198.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-1_200kb-1024x678.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-1_200kb-768x508.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-1_200kb-1536x1016.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/GROUPE-PHARMA-11_200kb.jpg": {
+  "w": 2048,
+  "h": 1365,
+  "srcset": [
+   [
+    "2026/05/GROUPE-PHARMA-11_200kb.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-11_200kb-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-11_200kb-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-11_200kb-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-11_200kb-1536x1024.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/GROUPE-PHARMA-9_200kb.jpg": {
+  "w": 2048,
+  "h": 1380,
+  "srcset": [
+   [
+    "2026/05/GROUPE-PHARMA-9_200kb.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-9_200kb-300x202.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-9_200kb-1024x690.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-9_200kb-768x518.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-9_200kb-1536x1035.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/GROUPE-PHARMA-7_200kb.jpg": {
+  "w": 1377,
+  "h": 2048,
+  "srcset": [
+   [
+    "2026/05/GROUPE-PHARMA-7_200kb.jpg",
+    "1377w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-7_200kb-202x300.jpg",
+    "202w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-7_200kb-689x1024.jpg",
+    "689w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-7_200kb-768x1142.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/GROUPE-PHARMA-7_200kb-1033x1536.jpg",
+    "1033w"
+   ]
+  ]
+ },
+ "2026/05/GROUPE-PHARMA-4_200kb.jpg": {
+  "srcset": []
+ },
+ "2026/05/Office_manager_Groupe_Pharmaceutique_200kb.png": {
+  "w": 60,
+  "h": 60,
+  "srcset": []
+ },
+ "2026/05/merz_compressed_9-1-1024x671.jpg": {
+  "srcset": []
+ },
+ "2026/05/merz_compressed_8-1-1024x670.jpg": {
+  "srcset": []
+ },
+ "2026/05/merz_compressed_7-1-1024x680.jpg": {
+  "srcset": []
+ },
+ "2026/05/merz_compressed_5-1-1024x684.jpg": {
+  "srcset": []
+ },
+ "2026/05/merz_compressed_6-1-1024x672.jpg": {
+  "srcset": []
+ },
+ "2026/05/merz_compressed_3-1-1024x677.jpg": {
+  "srcset": []
+ },
+ "2026/05/merz_compressed_9-1.jpg": {
+  "srcset": []
+ },
+ "2026/05/merz_compressed_2-1.jpg": {
+  "w": 2048,
+  "h": 1366,
+  "srcset": [
+   [
+    "2026/05/merz_compressed_2-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/merz_compressed_2-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/merz_compressed_2-1-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/merz_compressed_2-1-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/merz_compressed_2-1-1536x1025.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/merz_compressed_4-1.jpg": {
+  "w": 2048,
+  "h": 1361,
+  "srcset": [
+   [
+    "2026/05/merz_compressed_4-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/merz_compressed_4-1-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/merz_compressed_4-1-1024x681.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/merz_compressed_4-1-768x510.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/merz_compressed_4-1-1536x1021.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/merz_compressed_6-1.jpg": {
+  "w": 2048,
+  "h": 1344,
+  "srcset": [
+   [
+    "2026/05/merz_compressed_6-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/merz_compressed_6-1-300x197.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/merz_compressed_6-1-1024x672.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/merz_compressed_6-1-768x504.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/merz_compressed_6-1-1536x1008.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/merz_compressed_5-1.jpg": {
+  "w": 2048,
+  "h": 1367,
+  "srcset": [
+   [
+    "2026/05/merz_compressed_5-1.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/merz_compressed_5-1-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/merz_compressed_5-1-1024x684.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/merz_compressed_5-1-768x513.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/merz_compressed_5-1-1536x1025.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/merz_compressed_3-1.jpg": {
+  "srcset": []
+ },
+ "2026/05/Nicolas_de_La_Hosseraye_Merz_Aesthetics_200kb.png": {
+  "w": 60,
+  "h": 60,
+  "srcset": []
+ },
+ "2026/05/merz_compressed_8-1.jpg": {
+  "srcset": []
+ },
+ "2026/05/Niterra-2-retouche_200kb-1024x677.jpg": {
+  "srcset": []
+ },
+ "2026/05/Niterra-3-retouche_200kb-1024x687.jpg": {
+  "srcset": []
+ },
+ "2026/05/Niterra-4-retouche_200kb-1024x676.jpg": {
+  "srcset": []
+ },
+ "2026/05/Niterra-5-retouche_200kb-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/05/Niterra-1-retouche_200kb.jpg": {
+  "srcset": []
+ },
+ "2026/05/Niterra-6-retouche_200kb.jpg": {
+  "w": 2048,
+  "h": 1360,
+  "srcset": [
+   [
+    "2026/05/Niterra-6-retouche_200kb.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/Niterra-6-retouche_200kb-300x199.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Niterra-6-retouche_200kb-1024x680.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Niterra-6-retouche_200kb-768x510.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Niterra-6-retouche_200kb-1536x1020.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/Niterra-7-retouche_200kb.jpg": {
+  "w": 2048,
+  "h": 1341,
+  "srcset": [
+   [
+    "2026/05/Niterra-7-retouche_200kb.jpg",
+    "2048w"
+   ],
+   [
+    "2026/05/Niterra-7-retouche_200kb-300x196.jpg",
+    "300w"
+   ],
+   [
+    "2026/05/Niterra-7-retouche_200kb-1024x671.jpg",
+    "1024w"
+   ],
+   [
+    "2026/05/Niterra-7-retouche_200kb-768x503.jpg",
+    "768w"
+   ],
+   [
+    "2026/05/Niterra-7-retouche_200kb-1536x1006.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/Niterra-4-retouche_200kb.jpg": {
+  "srcset": []
+ },
+ "2026/05/Maxime_Vigouroux_Niterra_200kb.png": {
+  "w": 60,
+  "h": 60,
+  "srcset": []
+ },
+ "2026/06/ADP-Group_RodlPartner-5_under200KB-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/06/ADP-Group_RodlPartner-13_under200KB-683x1024.jpg": {
+  "srcset": []
+ },
+ "2026/06/ADP-Group_RodlPartner-18_under200KB-1024x683.jpg": {
+  "srcset": []
+ },
+ "2026/06/ADP-Group_RodlPartner-18_under200KB.jpg": {
+  "srcset": []
+ },
+ "2026/06/ADP-Group_RodlPartner-1_under200KB.jpg": {
+  "w": 1365,
+  "h": 2048,
+  "srcset": [
+   [
+    "2026/06/ADP-Group_RodlPartner-1_under200KB.jpg",
+    "1365w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-1_under200KB-200x300.jpg",
+    "200w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-1_under200KB-683x1024.jpg",
+    "683w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-1_under200KB-768x1152.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-1_under200KB-1024x1536.jpg",
+    "1024w"
+   ]
+  ]
+ },
+ "2026/06/ADP-Group_RodlPartner-3_under200KB.jpg": {
+  "w": 1365,
+  "h": 2048,
+  "srcset": [
+   [
+    "2026/06/ADP-Group_RodlPartner-3_under200KB.jpg",
+    "1365w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-3_under200KB-200x300.jpg",
+    "200w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-3_under200KB-683x1024.jpg",
+    "683w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-3_under200KB-768x1152.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/ADP-Group_RodlPartner-3_under200KB-1024x1536.jpg",
+    "1024w"
+   ]
+  ]
+ },
+ "2026/05/Temoignage_Rodl_200kb-1.jpg": {
+  "srcset": []
+ },
+ "2026/05/Nicola_Lohrey_Rodl_Partner_200kb.png": {
+  "w": 60,
+  "h": 60,
+  "srcset": []
+ },
+ "2026/06/62B5340-retouchee_under200KB-1024x682.jpg": {
+  "srcset": []
+ },
+ "2026/06/Socoda-_62B5274-retouchee_under200KB-1024x673.jpg": {
+  "srcset": []
+ },
+ "2026/06/Socoda-_62B5282-retouchee_under200KB-1024x678.jpg": {
+  "srcset": []
+ },
+ "2026/06/socoda-_62B5386-retouche_under200KB-1024x680.jpg": {
+  "srcset": []
+ },
+ "2026/06/Socoda-_62B5274-retouchee_under200KB.jpg": {
+  "srcset": []
+ },
+ "2026/06/Socoda-_62B5305-retouchee_under200KB.jpg": {
+  "w": 2048,
+  "h": 1355,
+  "srcset": [
+   [
+    "2026/06/Socoda-_62B5305-retouchee_under200KB.jpg",
+    "2048w"
+   ],
+   [
+    "2026/06/Socoda-_62B5305-retouchee_under200KB-300x198.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/Socoda-_62B5305-retouchee_under200KB-1024x678.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/Socoda-_62B5305-retouchee_under200KB-768x508.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/Socoda-_62B5305-retouchee_under200KB-1536x1016.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/06/Socoda-_62B5295-retouchee_under200KB.jpg": {
+  "w": 2048,
+  "h": 1365,
+  "srcset": [
+   [
+    "2026/06/Socoda-_62B5295-retouchee_under200KB.jpg",
+    "2048w"
+   ],
+   [
+    "2026/06/Socoda-_62B5295-retouchee_under200KB-300x200.jpg",
+    "300w"
+   ],
+   [
+    "2026/06/Socoda-_62B5295-retouchee_under200KB-1024x683.jpg",
+    "1024w"
+   ],
+   [
+    "2026/06/Socoda-_62B5295-retouchee_under200KB-768x512.jpg",
+    "768w"
+   ],
+   [
+    "2026/06/Socoda-_62B5295-retouchee_under200KB-1536x1024.jpg",
+    "1536w"
+   ]
+  ]
+ },
+ "2026/05/Temoignage_Naarea_2_200kb.jpg": {
+  "srcset": []
+ },
+ "2026/05/Jean-Marc-Magnet-Naarea.png": {
+  "srcset": []
+ },
+ "2026/05/Temoignage_IM_Projet_200kb.jpg": {
+  "srcset": []
+ },
+ "2026/05/Philippe_Regis_IM_Projet_200kb.png": {
+  "srcset": []
+ },
+ "2026/05/Temoignage_Merz_Aesthetics_1_200kb.jpg": {
+  "srcset": []
+ },
+ "2026/05/Temoignage_Niterra_200kb.jpg": {
+  "srcset": []
+ },
+ "2026/05/Temoignage_Groupe_Pharma_3_200kb.jpg": {
+  "srcset": []
+ }
+}

@@ -1,0 +1,165 @@
+---
+/**
+ * Global dialogs: legal notice + privacy policy (content loaded from
+ * /api/legal/*.json), gallery lightbox, form success popups and the
+ * callback-request dialog.
+ */
+import CallbackModal from "./CallbackModal.astro";
+---
+
+<div
+  class="legal-mentions"
+  data-legal-modal=""
+  data-url="/en/legal-notice/"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="legal-mentions-title"
+  hidden=""
+>
+  <div class="legal-mentions__backdrop" data-legal-close=""></div>
+
+  <div class="legal-mentions__modal" role="document">
+    <header class="legal-mentions__header">
+      <h2 class="legal-mentions__title" id="legal-mentions-title">Legal Notice</h2>
+      <button type="button" class="legal-mentions__close" data-legal-close="" aria-label="Close">
+        <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </header>
+
+    <div class="legal-mentions__body">
+      <aside class="legal-mentions__sidebar">
+        <span class="legal-mentions__sidebar-label">Contents</span>
+        <nav class="legal-mentions__nav" aria-label="Sections" data-legal-nav-list=""></nav>
+      </aside>
+
+      <div class="legal-mentions__content" data-legal-scroll="" data-lenis-prevent=""></div>
+    </div>
+  </div>
+</div>
+<div
+  class="privacy-policy"
+  data-privacy-modal=""
+  data-url="/en/privacy-policy/"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="privacy-policy-title"
+  hidden=""
+>
+  <div class="privacy-policy__backdrop" data-privacy-close=""></div>
+
+  <div class="privacy-policy__modal" role="document">
+    <header class="privacy-policy__header">
+      <h2 class="privacy-policy__title" id="privacy-policy-title">Privacy Policy</h2>
+      <button type="button" class="privacy-policy__close" data-privacy-close="" aria-label="Close">
+        <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </header>
+
+    <div class="privacy-policy__body">
+      <aside class="privacy-policy__sidebar">
+        <span class="privacy-policy__sidebar-label">Contents</span>
+        <nav class="privacy-policy__nav" aria-label="Sections" data-privacy-nav-list=""></nav>
+      </aside>
+
+      <div class="privacy-policy__content" data-privacy-scroll="" data-lenis-prevent=""></div>
+    </div>
+  </div>
+</div>
+<div class="lightbox" data-lightbox-modal="" role="dialog" aria-modal="true" aria-label="Image gallery" hidden="">
+  <div class="lightbox__backdrop" data-lightbox-close=""></div>
+
+  <button type="button" class="lightbox__close" data-lightbox-close="" aria-label="Close">
+    <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+      <path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+    </svg>
+  </button>
+
+  <button type="button" class="lightbox__arrow lightbox__arrow--prev" data-lightbox-prev="" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M19 12H5M5 12L12 5M5 12L12 19"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </svg>
+  </button>
+
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" alt="" />
+  </figure>
+
+  <button type="button" class="lightbox__arrow lightbox__arrow--next" data-lightbox-next="" aria-label="Next image">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M5 12H19M19 12L12 5M19 12L12 19"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </svg>
+  </button>
+</div>
+<div
+  class="success-popup success-popup--modal"
+  data-form-success="contact"
+  hidden=""
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="rs-contact-success-title"
+>
+  <div class="success-popup__backdrop" data-success-close=""></div>
+
+  <div class="success-popup__card">
+    <button type="button" class="success-popup__close" data-success-close="" aria-label="Close">
+      <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+      </svg>
+    </button>
+
+    <span class="success-popup__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+        <path d="M5 12.5L10 17.5L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </span>
+
+    <div class="success-popup__text">
+      <p class="success-popup__title" id="rs-contact-success-title">Thank you!</p>
+      <p class="success-popup__body">Your message has been sent.</p>
+    </div>
+
+    <button type="button" class="success-popup__cta" data-success-close="">Close</button>
+
+    <span class="success-popup__progress" data-success-progress="" aria-hidden="true"></span>
+  </div>
+</div>
+<div class="success-popup success-popup--toast" data-form-success="newsletter" hidden="" role="status" aria-live="polite">
+  <div class="success-popup__card">
+    <button type="button" class="success-popup__close" data-success-close="" aria-label="Close">
+      <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+      </svg>
+    </button>
+
+    <span class="success-popup__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+        <path d="M5 12.5L10 17.5L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </span>
+
+    <div class="success-popup__text">
+      <p class="success-popup__title" id="rs-newsletter-success-title">Thank you for subscribing!</p>
+      <p class="success-popup__body">You will receive our latest news and exclusive content.</p>
+    </div>
+
+    <span class="success-popup__progress" data-success-progress="" aria-hidden="true"></span>
+  </div>
+</div>
+
+<CallbackModal />

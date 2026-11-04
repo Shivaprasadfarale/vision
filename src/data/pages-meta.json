@@ -1,0 +1,696 @@
+{
+ "404": {
+  "path": "/404",
+  "title": "Page not found - Ronnsquare",
+  "description": "",
+  "bodyClass": "error404 wp-theme-ronn_square_back",
+  "namespace": "error404",
+  "postId": "0",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "hasBreadcrumb": false,
+  "breadcrumbs": [],
+  "frUrl": "https://ronnsquare.fr/"
+ },
+ "contact": {
+  "path": "/en/contact/",
+  "title": "Contact - Let's talk about your project | Ronnsquare",
+  "description": "Get in touch with Ronnsquare to transform your workspaces. Tell us about your project - we'll call you back within a minute.",
+  "bodyClass": "wp-singular page-template-default page page-id-833 wp-theme-ronn_square_back",
+  "namespace": "contact",
+  "postId": "833",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Contact"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/contact/",
+  "ogImage": "/assets/uploads/2026/05/14.-CALL-TO-ACTION.jpg"
+ },
+ "dna-team": {
+  "path": "/en/dna-team/",
+  "title": "Our DNA and our team | Ronnsquare",
+  "description": "Discover the DNA of Ronnsquare and the team that imagines, designs and delivers workspaces that reflect who you are.",
+  "bodyClass": "wp-singular page-template-default page page-id-832 wp-theme-ronn_square_back",
+  "namespace": "dna-team",
+  "postId": "832",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "DNA & Team"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/adn-equipe/",
+  "ogImage": "/assets/uploads/2026/06/7.-PHOTOS-EQUIPES-SHOWROOM1_200kb.jpg"
+ },
+ "expertises": {
+  "path": "/en/expertises/",
+  "title": "Our workplace design expertise | Ronnsquare",
+  "description": "From architecture to design and on-site delivery, Ronnsquare masters every stage of your office fit-out.",
+  "bodyClass": "wp-singular page-template-default page page-id-831 page-parent wp-theme-ronn_square_back",
+  "namespace": "expertises",
+  "postId": "831",
+  "initialBg": "maron",
+  "navTheme": "dark-sable",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Our Expertise"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/expertises/",
+  "ogImage": "/assets/uploads/2026/06/3.-CONSEIL-STRATEGIQUE_200kb.jpg"
+ },
+ "expertises/architecture-design": {
+  "path": "/en/expertises/architecture-design/",
+  "title": "Workplace architecture & design | Ronnsquare",
+  "description": "Ronnsquare designs the architecture and interiors of your offices: functional, beautiful spaces true to your brand.",
+  "bodyClass": "wp-singular page-template-default page page-id-827 page-child parent-pageid-831 wp-theme-ronn_square_back",
+  "namespace": "architecture-design",
+  "postId": "827",
+  "initialBg": "sable",
+  "navTheme": "dark-parme",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Our Expertise",
+    "url": "/en/expertises/"
+   },
+   {
+    "label": "Architecture & Design"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/expertises/architecture-design/",
+  "ogImage": "/assets/uploads/2026/06/4.-ARCHITECTURE-DESIGN_200kb.jpg"
+ },
+ "expertises/consulting-strategy": {
+  "path": "/en/expertises/consulting-strategy/",
+  "title": "Strategic workplace consulting | Ronnsquare",
+  "description": "Stay or Move, space planning, budgeting: Ronnsquare's strategic consulting guides your real-estate decisions before fit-out.",
+  "bodyClass": "wp-singular page-template-default page page-id-830 page-child parent-pageid-831 wp-theme-ronn_square_back",
+  "namespace": "consulting-strategy",
+  "postId": "830",
+  "initialBg": "sable",
+  "navTheme": "dark-sable",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Our Expertise",
+    "url": "/en/expertises/"
+   },
+   {
+    "label": "Consulting & Strategy"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/expertises/conseil-strategique/",
+  "ogImage": "/assets/uploads/2026/06/3.-CONSEIL-STRATEGIQUE_200kb.jpg"
+ },
+ "expertises/sustainability-ecology": {
+  "path": "/en/expertises/sustainability-ecology/",
+  "title": "Sustainability & ecology at work | Ronnsquare",
+  "description": "Ronnsquare creates sustainable workspaces: responsible materials, reuse and strong environmental performance.",
+  "bodyClass": "wp-singular page-template-default page page-id-825 page-child parent-pageid-831 wp-theme-ronn_square_back",
+  "namespace": "sustainability-ecology",
+  "postId": "825",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Our Expertise",
+    "url": "/en/expertises/"
+   },
+   {
+    "label": "Sustainability & Ecology"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/expertises/durabilite-ecologie/",
+  "ogImage": "/assets/uploads/2026/06/6.-DURABILITE-ECOLOGIE_200kb.jpg"
+ },
+ "expertises/technical-execution": {
+  "path": "/en/expertises/technical-execution/",
+  "title": "Technical delivery & fit-out | Ronnsquare",
+  "description": "Ronnsquare manages the technical delivery of your fit-out, from coordination to turnkey on-site completion.",
+  "bodyClass": "wp-singular page-template-default page page-id-826 page-child parent-pageid-831 wp-theme-ronn_square_back",
+  "namespace": "technical-execution",
+  "postId": "826",
+  "initialBg": "sable",
+  "navTheme": "dark-sable",
+  "navThemeScrolled": "light",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Our Expertise",
+    "url": "/en/expertises/"
+   },
+   {
+    "label": "Technical & Execution"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/expertises/technique-realisation/",
+  "ogImage": "/assets/uploads/2026/06/5.-TECNIQUE-REALISATION_200kb.jpg"
+ },
+ "faq": {
+  "path": "/en/faq/",
+  "title": "FAQ - Workplace design | Ronnsquare",
+  "description": "Your questions about office fit-out, timelines, budget and Ronnsquare's support - all the answers in one place.",
+  "bodyClass": "wp-singular page-template-default page page-id-820 wp-theme-ronn_square_back",
+  "namespace": "faq",
+  "postId": "820",
+  "initialBg": "maron",
+  "navTheme": "dark-sable",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "FAQ"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/faq/",
+  "ogImage": "/assets/uploads/2026/06/ronn-square-og-default.jpg"
+ },
+ "home": {
+  "path": "/en/",
+  "title": "Ronnsquare - Workplace Design & Fit-Out in Paris",
+  "description": "Ronnsquare rethinks and transforms your workspaces in Paris: strategic consulting, architecture, design and turnkey fit-out.",
+  "bodyClass": "home wp-singular page-template-default page page-id-834 wp-theme-ronn_square_back is-home-entrance",
+  "namespace": "home",
+  "postId": "834",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "hasBreadcrumb": false,
+  "breadcrumbs": [],
+  "frUrl": "https://ronnsquare.fr/",
+  "ogImage": "/assets/uploads/2026/06/social-post.jpg"
+ },
+ "legal-notice": {
+  "path": "/en/legal-notice/",
+  "title": "Legal Notice - Ronnsquare",
+  "description": "Legal information, website publisher details, hosting, and terms of use",
+  "bodyClass": "wp-singular page-template page-template-page-legal page-template-page-legal-php page page-id-1529 wp-theme-ronn_square_back",
+  "namespace": "legal-notice",
+  "postId": "1529",
+  "initialBg": "sable",
+  "navTheme": "dark-sable",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Legal Notice"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/mentions-legales/",
+  "openModal": "legal",
+  "ogImage": "/assets/uploads/2026/06/Capture-decran-2026-06-11-a-23.14.52.png"
+ },
+ "preoccupations": {
+  "path": "/en/preoccupations/",
+  "title": "Your challenges, our solutions | Ronnsquare",
+  "description": "Bringing teams back, attracting talent, managing complex projects: Ronnsquare answers your workplace challenges.",
+  "bodyClass": "wp-singular page-template-default page page-id-821 page-parent wp-theme-ronn_square_back",
+  "namespace": "preoccupations",
+  "postId": "821",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Concerns"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/preoccupations/",
+  "ogImage": "/assets/uploads/2026/05/preoccupation-01.jpg"
+ },
+ "preoccupations/attract-and-retain-talent": {
+  "path": "/en/preoccupations/attract-and-retain-talent/",
+  "title": "Attract and retain talent | Ronnsquare",
+  "description": "A workplace that appeals: Ronnsquare designs spaces that help you attract and retain your best talent.",
+  "bodyClass": "wp-singular page-template-default page page-id-823 page-child parent-pageid-821 wp-theme-ronn_square_back",
+  "namespace": "attract-and-retain-talent",
+  "postId": "823",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Concerns",
+    "url": "/en/preoccupations/"
+   },
+   {
+    "label": "Attract and retain talent"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/preoccupations/attirer-et-retenir-les-talents/",
+  "ogImage": "/assets/uploads/2026/05/hero-photo-1024x512.png"
+ },
+ "preoccupations/bring-teams-back": {
+  "path": "/en/preoccupations/bring-teams-back/",
+  "title": "Bring your teams back to the office | Ronnsquare",
+  "description": "Workspaces that make people want to return: Ronnsquare reinvents the office to rebuild connection and appeal.",
+  "bodyClass": "wp-singular page-template-default page page-id-824 page-child parent-pageid-821 wp-theme-ronn_square_back",
+  "namespace": "bring-teams-back",
+  "postId": "824",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Concerns",
+    "url": "/en/preoccupations/"
+   },
+   {
+    "label": "Bring teams back"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/preoccupations/faire-revenir-les-equipes/",
+  "ogImage": "/assets/uploads/2026/05/cta-bg.jpg"
+ },
+ "preoccupations/complex-projects": {
+  "path": "/en/preoccupations/complex-projects/",
+  "title": "Complex fit-out projects | Ronnsquare",
+  "description": "Multi-site, technical constraints, tight deadlines: Ronnsquare orchestrates your most complex workplace projects.",
+  "bodyClass": "wp-singular page-template-default page page-id-822 page-child parent-pageid-821 wp-theme-ronn_square_back",
+  "namespace": "complex-projects",
+  "postId": "822",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Concerns",
+    "url": "/en/preoccupations/"
+   },
+   {
+    "label": "Complex projects"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/preoccupations/projets-complexes/",
+  "ogImage": "/assets/uploads/2026/06/CCFA-3.jpg"
+ },
+ "preoccupations/lease-expiry": {
+  "path": "/en/preoccupations/lease-expiry/",
+  "title": "End of lease: stay or go? | Ronnsquare",
+  "description": "Is your lease coming to an end? Ronnsquare's Stay or Go analysis helps you decide whether to stay or relocate your offices.",
+  "bodyClass": "wp-singular page-template-default page page-id-828 page-child parent-pageid-821 wp-theme-ronn_square_back",
+  "namespace": "lease-expiry",
+  "postId": "828",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Concerns",
+    "url": "/en/preoccupations/"
+   },
+   {
+    "label": "Lease Expiry"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/preoccupations/fin-de-bail/",
+  "ogImage": "/assets/uploads/2026/05/preoccupation-02.jpg"
+ },
+ "privacy-policy": {
+  "path": "/en/privacy-policy/",
+  "title": "Privacy Policy - Ronnsquare",
+  "description": "Learn how we collect, use, and protect your personal data.",
+  "bodyClass": "wp-singular page-template page-template-page-legal page-template-page-legal-php page page-id-1530 wp-theme-ronn_square_back",
+  "namespace": "privacy-policy",
+  "postId": "1530",
+  "initialBg": "sable",
+  "navTheme": "dark-sable",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Privacy Policy"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/politique-de-confidentialite/",
+  "openModal": "privacy",
+  "ogImage": "/assets/uploads/2026/06/Capture-decran-2026-06-11-a-23.14.52.png"
+ },
+ "realisations": {
+  "path": "/en/realisations/",
+  "title": "Our workspace projects | Ronnsquare",
+  "description": "Browse Ronnsquare's projects: offices, headquarters and workspaces designed for companies across France and Europe.",
+  "bodyClass": "wp-singular page-template-default page page-id-829 wp-theme-ronn_square_back",
+  "namespace": "realisations",
+  "postId": "829",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Projects"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/realisations/",
+  "ogImage": "/assets/uploads/2026/05/Niterra-1-retouche_200kb.jpg"
+ },
+ "realisations/abylsen": {
+  "path": "/en/realisations/abylsen/",
+  "title": "Abylsen - Paris 8ème | Ronnsquare",
+  "description": "Headquarters Fit-Out - Workplace design - Abylsen, Paris 8ème. A project by Ronn Square.",
+  "bodyClass": "wp-singular realisation-template-default single single-realisation postid-843 wp-theme-ronn_square_back",
+  "namespace": "realisation",
+  "postId": "843",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Projects",
+    "url": "/en/realisations/"
+   },
+   {
+    "label": "ABYLSEN"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/realisations/abylsen/",
+  "ogImage": "/assets/uploads/2026/05/abylsen_compressed_7.jpg"
+ },
+ "realisations/arneg": {
+  "path": "/en/realisations/arneg/",
+  "title": "Arneg - Tremblay-en-France | Ronnsquare",
+  "description": "Relocation for Greater Flexibility - Workplace design - Arneg, Tremblay-en-France, 890 m². A project by Ronn Square.",
+  "bodyClass": "wp-singular realisation-template-default single single-realisation postid-838 wp-theme-ronn_square_back",
+  "namespace": "realisation",
+  "postId": "838",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Projects",
+    "url": "/en/realisations/"
+   },
+   {
+    "label": "ARNEG"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/realisations/arneg/",
+  "ogImage": "/assets/uploads/2026/06/Arneg-11_200KB.jpg"
+ },
+ "realisations/ccfa": {
+  "path": "/en/realisations/ccfa/",
+  "title": "CCFA - Paris 8ème | Ronnsquare",
+  "description": "A Prime Location - Workplace design - CCFA, Paris 8ème. A project by Ronn Square.",
+  "bodyClass": "wp-singular realisation-template-default single single-realisation postid-837 wp-theme-ronn_square_back",
+  "namespace": "realisation",
+  "postId": "837",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Projects",
+    "url": "/en/realisations/"
+   },
+   {
+    "label": "CCFA"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/realisations/ccfa/",
+  "ogImage": "/assets/uploads/2026/06/CCFA-4.jpg"
+ },
+ "realisations/epiceum": {
+  "path": "/en/realisations/epiceum/",
+  "title": "Epiceum - Montreuil | Ronnsquare",
+  "description": "Relocation to a New Office Floor - Workplace design - Epiceum, Montreuil. A project by Ronn Square.",
+  "bodyClass": "wp-singular realisation-template-default single single-realisation postid-842 wp-theme-ronn_square_back",
+  "namespace": "realisation",
+  "postId": "842",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Projects",
+    "url": "/en/realisations/"
+   },
+   {
+    "label": "EPICEUM"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/realisations/epiceum/",
+  "ogImage": "/assets/uploads/2026/05/epiceum_compressed_3-1.jpg"
+ },
+ "realisations/groupe-pharma": {
+  "path": "/en/realisations/groupe-pharma/",
+  "title": "Groupe Pharmaceutique - Grand Paris | Ronnsquare",
+  "description": "European Headquarters Fit-Out - Workplace design - Groupe Pharmaceutique, Grand Paris. A project by Ronn Square.",
+  "bodyClass": "wp-singular realisation-template-default single single-realisation postid-841 wp-theme-ronn_square_back",
+  "namespace": "realisation",
+  "postId": "841",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Projects",
+    "url": "/en/realisations/"
+   },
+   {
+    "label": "GROUPE PHARMA"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/realisations/groupe-pharma/",
+  "ogImage": "/assets/uploads/2026/05/GROUPE-PHARMA-4_200kb.jpg"
+ },
+ "realisations/merz-aesthetic": {
+  "path": "/en/realisations/merz-aesthetic/",
+  "title": "Merz Aesthetics - Courbevoie | Ronnsquare",
+  "description": "A New Space for Optimal Reorganization - Workplace design - Merz Aesthetics, Courbevoie. A project by Ronn Square.",
+  "bodyClass": "wp-singular realisation-template-default single single-realisation postid-840 wp-theme-ronn_square_back",
+  "namespace": "realisation",
+  "postId": "840",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Projects",
+    "url": "/en/realisations/"
+   },
+   {
+    "label": "MERZ AESTHETIC"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/realisations/merz-aesthetic/",
+  "ogImage": "/assets/uploads/2026/05/merz_compressed_1-1.jpg"
+ },
+ "realisations/niterra": {
+  "path": "/en/realisations/niterra/",
+  "title": "Niterra - Le Plessis Robinson | Ronnsquare",
+  "description": "Relocation at Lease Expiry - Workplace design - Niterra, Le Plessis Robinson. A project by Ronn Square.",
+  "bodyClass": "wp-singular realisation-template-default single single-realisation postid-839 wp-theme-ronn_square_back",
+  "namespace": "realisation",
+  "postId": "839",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Projects",
+    "url": "/en/realisations/"
+   },
+   {
+    "label": "NITERRA"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/realisations/niterra/",
+  "ogImage": "/assets/uploads/2026/05/Niterra-1-retouche_200kb.jpg"
+ },
+ "realisations/rodl-partner": {
+  "path": "/en/realisations/rodl-partner/",
+  "title": "Rödl & Partner - Paris 8ème | Ronnsquare",
+  "description": "Law Firm Interior Design - Workplace design - Rödl & Partner, Paris 8ème. A project by Ronn Square.",
+  "bodyClass": "wp-singular realisation-template-default single single-realisation postid-836 wp-theme-ronn_square_back",
+  "namespace": "realisation",
+  "postId": "836",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Projects",
+    "url": "/en/realisations/"
+   },
+   {
+    "label": "RÖDL & PARTNER"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/realisations/rodl-partner/",
+  "ogImage": "/assets/uploads/2026/05/Temoignage_Rodl_200kb-1.jpg"
+ },
+ "realisations/socoda": {
+  "path": "/en/realisations/socoda/",
+  "title": "Socoda - Paris 1er | Ronnsquare",
+  "description": "Bringing Teams Together - Workplace design - Socoda, Paris 1er. A project by Ronn Square.",
+  "bodyClass": "wp-singular realisation-template-default single single-realisation postid-835 wp-theme-ronn_square_back",
+  "namespace": "realisation",
+  "postId": "835",
+  "initialBg": "sable",
+  "navTheme": "light",
+  "navThemeScrolled": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Projects",
+    "url": "/en/realisations/"
+   },
+   {
+    "label": "SOCODA"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/realisations/socoda/",
+  "ogImage": "/assets/uploads/2026/06/Socoda-_62B5280-retouchee_under200KB.jpg"
+ },
+ "testimonials": {
+  "path": "/en/testimonials/",
+  "title": "Client testimonials | Ronnsquare",
+  "description": "What our clients say about Ronnsquare: real feedback on the design and fit-out of their workspaces.",
+  "bodyClass": "wp-singular page-template-default page page-id-819 wp-theme-ronn_square_back",
+  "namespace": "testimonials",
+  "postId": "819",
+  "initialBg": "maron",
+  "navTheme": "dark-sable",
+  "hasBreadcrumb": true,
+  "breadcrumbs": [
+   {
+    "label": "Home",
+    "url": "/en/"
+   },
+   {
+    "label": "Testimonials"
+   }
+  ],
+  "frUrl": "https://ronnsquare.fr/temoignages/",
+  "ogImage": "/assets/uploads/2026/05/Temoignage_Horus_Pharma_1_200kb.jpg"
+ }
+}
