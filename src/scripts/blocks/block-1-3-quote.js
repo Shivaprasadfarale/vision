@@ -272,4 +272,4 @@ const It = Object.freeze(
     { value: "Module" },
   ),
 );
-export { ot as M, It as b };
+export { ot as M, It as b, J as init };
