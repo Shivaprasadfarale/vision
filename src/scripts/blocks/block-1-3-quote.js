@@ -3,7 +3,7 @@
 import { S as it, m as nt, _ as W } from "../core/exports.js";
 import { d as m, S as Y } from "../vendor/gsap-core.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { g as T } from "../lib/matrix.js";
+import { getGlobalMatrix as T } from "gsap/utils/matrix";
 import { i as Z, b as ct } from "../lib/totem-sway.js";
 import { b as ut } from "../lib/totem-formation.js";
 import { buildMainQuoteTimeline as pt } from "../lib/main-quote-reveal.js";
